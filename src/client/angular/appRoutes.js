@@ -3,12 +3,12 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
     $routeProvider
 
         .when('/', {
-            templateUrl: 'angular/main/main.view.jade',
+            templateUrl: '/templates/main/main.view.html',
             controller: 'MainController'
         })
 
         .when('/portfolio', {
-            templateUrl: 'angular/portfolio/portfolio.view.jade',
+            templateUrl: '/templates/portfolio/portfolio.view.html',
             controller: 'PortfolioController'
         });
 
