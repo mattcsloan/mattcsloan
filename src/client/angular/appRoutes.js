@@ -3,8 +3,8 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
     $routeProvider
 
         .when('/', {
-            templateUrl: '/templates/main/main.view.html',
-            controller: 'MainController'
+            templateUrl: '/templates/home/home.view.html',
+            controller: 'HomeController'
         })
 
         .when('/portfolio', {
