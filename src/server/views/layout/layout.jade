@@ -2,17 +2,8 @@ doctype html
 html(ng-app="sloanApp", ng-controller="MainController")
 	head
 		title MEAN App
-		link(href="/css/style.min.css", rel="stylesheet")
-
-		script(src="/libs/angular/angular.min.js")
-		script(src="/libs/angular-route/angular-route.min.js")
-
-		// Angular Items
-		script(src="/js/script.min.js")
+		include header-stylesheets
 	body
-		.header
-			.wrapper
-				img(src="img/logo.png", alt="Matt Sloan")
-		.main-content
-			.wrapper
-				block content
+		include body-header
+		include body-content
+		include body-scripts
