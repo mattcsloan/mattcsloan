@@ -40,7 +40,7 @@ gulp.task('js', function() {
 
 gulp.task('css', function() {
   //compile stylus file assets into one minimized css file
-  gulp.src('src/client/css/**/*.styl')
+  gulp.src('src/client/css/style.styl')
     .pipe(stylus({
       compress: true
     }))
