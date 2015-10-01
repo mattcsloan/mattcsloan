@@ -1,1 +1,1 @@
-angular.module('sloanApp', ['ngRoute', 'appRoutes', 'MainCtrl', 'PortfolioCtrl']);
+angular.module('sloanApp', ['ngRoute', 'appRoutes', 'MainCtrl', 'HomeCtrl', 'PortfolioCtrl']);
