@@ -1,5 +1,10 @@
-angular.module('MainCtrl', []).controller('MainController', function($scope) {
+angular.module('MainCtrl', []).controller('MainController', function($scope, $http) {
 
-   $scope.tagline = 'main';   
+   $scope.tagline = 'main';  
+
+   $http.get('api/navigation')
+    .success(function (res) {
+      $scope.navigation = res
+    });
 
 });

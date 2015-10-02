@@ -1,8 +1,9 @@
 {
-    "name": "mattcsloan",
-    "version": "1.0.0",
-    "dependencies": {
-        "angular": "latest",
-        "angular-route": "latest"   
-    }
+  "name": "mattcsloan",
+  "version": "1.0.0",
+  "dependencies": {
+    "angular": "latest",
+    "angular-route": "latest",
+    "angular-resource": "~1.4.7"
+  }
 }

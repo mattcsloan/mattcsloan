@@ -1,5 +1,5 @@
 angular.module('HomeCtrl', []).controller('HomeController', function($scope) {
 
-   $scope.tagline = 'home';   
+   $scope.title = 'Home';   
 
 });
