@@ -1,5 +1,10 @@
-angular.module('PortfolioCtrl', []).controller('PortfolioController', function($scope) {
+angular.module('PortfolioCtrl', []).controller('PortfolioController', function($scope, $http) {
 
-   $scope.title = 'Portfolio';   
+   $scope.title = 'Portfolio';  
+
+   $http.get('api/portfolio')
+    .success(function (res) {
+      $scope.portfolioList = res;
+    });
 
 });
