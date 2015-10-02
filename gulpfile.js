@@ -4,7 +4,7 @@ var jade = require('gulp-jade');
 var stylus = require('gulp-stylus');
 var rename = require('gulp-rename');
 
-gulp.task('default', ['templates', 'js', 'css'], function() {
+gulp.task('default', ['templates', 'img', 'js', 'css'], function() {
   // place code for your default task here
   console.log('gulp process completed');
 });
@@ -20,6 +20,14 @@ gulp.task('templates', function() {
     .pipe(gulp.dest('dist/templates'))
 });
 
+gulp.task('img', function() {
+  // convert jade files to html
+  var YOUR_LOCALS = {};
+
+  gulp.src('src/client/img/*.*')
+    .pipe(gulp.dest('dist/img'))
+});
+
 gulp.task('js', function() {
   //compile js file assets into one minimized file
   gulp.src('src/client/angular/**/*.js')
@@ -32,7 +40,7 @@ gulp.task('js', function() {
 
 gulp.task('css', function() {
   //compile stylus file assets into one minimized css file
-  gulp.src('src/client/css/**/*.styl')
+  gulp.src('src/client/css/style.styl')
     .pipe(stylus({
       compress: true
     }))

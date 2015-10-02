@@ -1,11 +1,14 @@
 //var Portfolio = require('./models/portfolio');
+var navigation = require('./data/navigation');
 
 module.exports = function(app) {
 
     // server routes ===========================================================
     // handle things like api calls
     // authentication routes
-
+    app.get('/api/navigation', function(req, res) {
+        res.json(201, navigation.items);
+    });
 
 
     // frontend routes =========================================================

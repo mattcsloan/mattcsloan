@@ -7,6 +7,10 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
             controller: 'HomeController'
         })
 
+        .when('/home', {
+            redirectTo: '/'
+        })
+
         .when('/portfolio', {
             templateUrl: '/templates/portfolio/portfolio.view.html',
             controller: 'PortfolioController'
