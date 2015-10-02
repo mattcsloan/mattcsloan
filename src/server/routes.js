@@ -1,4 +1,5 @@
 //var Portfolio = require('./models/portfolio');
+var navigation = require('./data/navigation');
 
 module.exports = function(app) {
 
@@ -6,21 +7,7 @@ module.exports = function(app) {
     // handle things like api calls
     // authentication routes
     app.get('/api/navigation', function(req, res) {
-        // var navigation = require('data/navigation');
-        var navigation = [
-            {
-              key: 'home',
-              label: 'Home',
-              url: '/home'
-            },
-            {
-              key: 'portfolio',
-              label: 'Portfolio',
-              url: '/portfolio'
-            }  
-        ];
-
-        res.json(201, navigation);
+        res.json(201, navigation.items);
     });
 
 
