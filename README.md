@@ -1,7 +1,11 @@
 # mattcsloan
 personal site - converting to angular app
 
-## Run
+##setup
+npm install
+bower install
+
+## Compile, Minify, and Run app
 npm start
 
 ## Port

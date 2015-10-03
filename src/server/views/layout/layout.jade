@@ -1,7 +1,7 @@
 doctype html
 html(ng-app="sloanApp", ng-controller="MainController")
 	head
-		title MEAN App
+		title(data-ng-bind="pageTitle")
 		include header-stylesheets
 	body
 		include body-header
