@@ -25,5 +25,31 @@ img
   margin 0 auto
   padding 16px
   box-sizing border-box
+.btn
+.toggle a
+  background $main-link
+  border-radius 2px
+  color #fff
+  text-align center
+  padding 4px 12px
+  &:hover
+    background $main-link-hover
+    color #fff
+    text-decoration none
+.toggle
+  a
+    border-radius 0
+    border-right 1px solid $main-link-hover
+    &:first-child
+      padding-left 24px
+      border-radius 16px 0 0 16px
+    &:last-child
+      padding-right 24px
+      border-radius 0 16px 16px 0
+      border-right 0
+    &.active
+      background $main-link-hover
+    &:hover
+      cursor pointer
 .main-content
   background $body-bg

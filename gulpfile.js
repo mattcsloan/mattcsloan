@@ -21,11 +21,9 @@ gulp.task('templates', function() {
 });
 
 gulp.task('img', function() {
-  // convert jade files to html
-  var YOUR_LOCALS = {};
-
-  gulp.src('src/client/img/*.*')
-    .pipe(gulp.dest('dist/img'))
+  // copy img files/directories over to dist directory
+  gulp.src('src/client/img/**/*.*')
+    .pipe(gulp.dest('dist/img'));
 });
 
 gulp.task('js', function() {
