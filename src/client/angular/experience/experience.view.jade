@@ -1,0 +1,12 @@
+h1 {{ title }}
+ul
+  li(data-ng-repeat="item in experience.items") {{item.company}}
+h2 Education
+ul
+  li(data-ng-repeat="item in experience.education") {{item.school}}
+h2 Development Skills
+ul
+  li(data-ng-repeat="item in experience.development") {{item.skill}}
+h2 Design Skills
+ul
+  li(data-ng-repeat="item in experience.design") {{item.skill}}

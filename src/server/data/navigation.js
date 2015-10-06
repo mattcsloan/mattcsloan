@@ -9,6 +9,11 @@ module.exports = {
       key: 'portfolio',
       label: 'Portfolio',
       url: '/portfolio'
+    },
+    {
+      key: 'experience',
+      label: 'Experience',
+      url: '/experience'
     }  
   ]
 };

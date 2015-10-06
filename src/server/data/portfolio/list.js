@@ -14,7 +14,7 @@ module.exports = [
         client: 'Ecoplumbers',
         employer: 'SMK',
         type: 'logo',
-        tools: 'ai',
+        tools: ['ai'],
         thumb: 'ecoplumbers_01'
     },
     {
@@ -32,7 +32,7 @@ module.exports = [
         client: 'Shiloh',
         employer: 'mcs',
         type: 'logo',
-        tools: 'ai',
+        tools: ['ai'],
         thumb: 'shiloh_logo_01'
     },
     {
@@ -41,7 +41,7 @@ module.exports = [
         client: 'Shiloh',
         employer: 'mcs',
         type: 'web',
-        tools: 'ps',
+        tools: ['ps'],
         thumb: 'shiloh_web_01'
     },
     {
@@ -50,7 +50,7 @@ module.exports = [
         client: 'mbbs',
         employer: 'mcs',
         type: 'logo',
-        tools: 'ai',
+        tools: ['ai'],
         thumb: 'mbbs_logo_01'
     },
     {
@@ -95,7 +95,7 @@ module.exports = [
         client: 'Catwalk',
         employer: 'Knotice',
         type: 'mobile',
-        tools: 'ps',
+        tools: ['ps'],
         thumb: 'tigi_01'
     },
     {
@@ -140,7 +140,7 @@ module.exports = [
         client: 'Westjet',
         employer: 'Knotice',
         type: 'mobile',
-        tools: 'ps',
+        tools: ['ps'],
         thumb: 'westjet_01'
     },
     {

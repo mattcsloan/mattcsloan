@@ -16,6 +16,12 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
             title: 'Portfolio',
             templateUrl: '/templates/portfolio/portfolio.view.html',
             controller: 'PortfolioController'
+        })
+
+        .when('/experience', {
+            title: 'Experience',
+            templateUrl: '/templates/experience/experience.view.html',
+            controller: 'ExperienceController'
         });
 
         // .otherwise({

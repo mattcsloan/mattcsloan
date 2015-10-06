@@ -8,8 +8,25 @@ div.portfolio.thumb(data-ng-if="view == 'thumb'")
     a(href="portfolio/{{item.key}}")
       span {{ item.project }}
       span.btn View Project
-div.portfolio.list(data-ng-if="view == 'list'")
-  div(data-ng-repeat="item in portfolioList | orderBy: $index: true")
-    a(href="portfolio/{{item.key}}")
-      span {{ item.project }}
-      span.btn View Project
+table.portfolio.list(data-ng-if="view == 'list'")
+  tr
+    th Project
+    th Client
+    th Employer
+    th Type
+    th Tools
+  tr(data-ng-repeat="item in portfolioList | orderBy: $index: true", data-ng-href="portfolio/{{item.key}}")
+    td
+      a(href="portfolio/{{item.key}}") {{ item.project }}
+    td.client
+      a(href="portfolio/{{item.key}}")
+        img(alt="{{item.client}}", src="img/clients/client_{{item.client}}.png")
+    td.employer
+      a(href="portfolio/{{item.key}}")
+        img(alt="{{item.employer}}", src="img/employer/logo_{{item.employer}}.png")
+    td.type
+      a(href="portfolio/{{item.key}}")
+        img(alt="{{item.type}}", src="img/icons/icon_device_{{item.type}}.png")
+    td.tools
+      a(href="portfolio/{{item.key}}")
+        img(data-ng-repeat="tool in item.tools", src="img/icons/icon_{{tool}}.png")

@@ -1,0 +1,89 @@
+.portfolio.thumb
+  display flex
+  flex-wrap wrap
+  > div
+    flex 1 0 25%
+    margin 6px
+    padding 4px
+    background #fff
+    box-shadow 0 2px 6px rgba(0,0,0,0.05)
+    box-sizing border-box
+    position relative
+    border-radius 2px
+    &:nth-child(3n + 1)
+      margin-left 0
+    &:nth-child(3n)
+      margin-right 0
+    img
+      width 100%
+    a
+      opacity 0
+      position absolute
+      top 0
+      left 0
+      width 100%
+      height 100%
+      background rgba(255,255,255,0.95)
+      color $main-link
+      padding 16px
+      box-sizing border-box
+      font-size 24px
+      font-weight 300
+      text-shadow 0 2px 4px rgba(255,255,255,0.6)
+      transition all 0.1s linear
+      .btn
+        position absolute
+        bottom 20px
+        left 16px
+        font-size 16px
+        text-transform uppercase
+      &:hover
+        text-decoration none
+    &:hover
+      a
+        opacity 1
+.portfolio.list
+  width 100%
+  td
+    padding 0
+    img
+      opacity 0.7
+    &.tools
+      img
+        opacity 0.4
+    &:hover
+      img
+        opacity 1
+      &.tools
+        img
+          opacity 0.7
+  .client
+    img
+      width 60px
+  tr
+    &:nth-child(even)
+      background #fefefe
+    td
+    th
+      color #aaa
+      &:first-child
+      &:last-child
+        padding 16px
+        text-align left
+      &:last-child
+        text-align right
+  .tools
+    img
+      float right
+      margin-left 4px
+  .client
+  .employer
+  .type
+    a
+      display block
+      img
+        margin 0 auto
+.toggle
+  float right
+  a
+    float left
