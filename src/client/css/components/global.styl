@@ -1,5 +1,5 @@
 body
-  background $body-bg
+  background $body-bg url(../img/body_bg.jpg) repeat left top
   margin 0
   padding 0
   font-family Lato, Arial, Helvetica, sans-serif
@@ -10,21 +10,45 @@ a
     color $main-link-hover
     text-decoration underline
 h1
+h2
   text-transform uppercase
-  margin 0 0 16px 0
+  margin 20px 0 16px 0
   padding-bottom 4px
   font-size 21px
   font-weight 300
+  color #555
+h2
+  font-size 18px
+  margin 0 0 10px 0
+h3
+h4
+  color #333
+  font-size 14px
+  margin 0
+  padding 0
+h4
+h5
+  color #888
+  font-size 14px
+h5
+  color #bbb
+  margin 0 0 10px 0
+hr
+  color #bbb
+  border-top 1px solid #ddd
+  margin 20px 0
+  padding 0
 img
-  width auto
   max-width 100% !important
   display block
+  border none
 .wrapper
   width 100%
-  max-width 1000px
+  max-width 1200px
   margin 0 auto
   padding 16px
   box-sizing border-box
+  clear both
 .btn
 .toggle a
   background $main-link
@@ -51,5 +75,29 @@ img
       background $main-link-hover
     &:hover
       cursor pointer
-.main-content
-  background $body-bg
+.mod
+  position relative
+  z-index 1
+  margin-bottom 30px
+  padding 20px 30px
+  background #fff
+  border 1px solid #e5e5e5
+  border-radius 4px
+  box-shadow 0 2px 0 #e1e1e1
+  overflow hidden
+  &:before
+    content ''
+    position absolute
+    z-index -1
+    top 2px
+    left 2px
+    right 2px
+    bottom 2px
+    border 1px solid #f4f4f4
+    background #fff
+    border-radius 2px
+  ul
+    margin 20px 0 0 15px
+    padding 0
+    li
+      margin-bottom 6px

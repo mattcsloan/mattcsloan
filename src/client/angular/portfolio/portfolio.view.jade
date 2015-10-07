@@ -3,7 +3,7 @@ div.toggle
   a(data-ng-click="toggleView('list')", data-ng-class="{true: 'active'}[view == 'list']") List
 h1 {{ title }}
 div.portfolio.thumb(data-ng-if="view == 'thumb'")
-  div(data-ng-repeat="item in portfolioList | orderBy: $index: true")
+  div.mod.hero(data-ng-repeat="item in portfolioList | orderBy: $index: true")
     img(data-ng-src="img/portfolio/{{item.thumb}}.jpg")
     a(href="portfolio/{{item.key}}")
       span {{ item.project }}
