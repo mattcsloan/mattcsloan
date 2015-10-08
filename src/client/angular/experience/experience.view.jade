@@ -1,24 +1,26 @@
 h1 {{ title }}
-.mod(data-ng-repeat="item in experience.items")
-  img(src="img/employer/logo_{{item.logo}}.png", alt="{{item.company}}")
-  h3 {{item.company}}
-  h4
-    em {{item.title}}
-    | , {{item.timeframe}}
-  ul.experience_details
-    li(data-ng-repeat="detail in item.roles") {{detail}}
-h2 Education
-.mod(data-ng-repeat="item in experience.education")
-  img(src="img/employer/logo_{{item.logo}}.png", alt="{{item.school}}")
-  h3 {{item.school}}
-  h4
-    em {{item.degree}}
-    | , {{item.timeframe}}
-  h4 {{item.major}}
-  h4 {{item.minor}}
-h2 Development Skills
-ul
-  li(data-ng-repeat="item in experience.development") {{item.skill}}
-h2 Design Skills
-ul
-  li(data-ng-repeat="item in experience.design") {{item.skill}}
+.main
+  .mod(data-ng-repeat="item in experience.items")
+    img.exp-logo(src="img/employer/logo_{{item.logo}}.png", alt="{{item.company}}")
+    h3 {{item.company}}
+    h4
+      em {{item.title}}
+      | , {{item.timeframe}}
+    ul.experience-details
+      li(data-ng-repeat="detail in item.roles") {{detail}}
+  h2 Education
+  .mod(data-ng-repeat="item in experience.education")
+    img.exp-logo(src="img/employer/logo_{{item.logo}}.png", alt="{{item.school}}")
+    h3 {{item.school}}
+    h4
+      em {{item.degree}}
+      | , {{item.timeframe}}
+    h4 {{item.major}}
+    h4 {{item.minor}}
+.secondary       
+  h2 Development Skills
+  ul
+    li(data-ng-repeat="item in experience.development") {{item.skill}}
+  h2 Design Skills
+  ul
+    li(data-ng-repeat="item in experience.design") {{item.skill}}

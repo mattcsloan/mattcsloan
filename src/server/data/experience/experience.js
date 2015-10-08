@@ -76,7 +76,7 @@ module.exports = {
   ],
   education: [
     {
-      school: 'the ohio state university',
+      school: 'The Ohio State University',
       degree: 'bachelor of arts, cum laude',
       timeframe: 'september 2004 - march 2009',
       major: 'major: communication technology',

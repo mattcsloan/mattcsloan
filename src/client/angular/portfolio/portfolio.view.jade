@@ -4,7 +4,7 @@ div.toggle
 h1 {{ title }}
 div.portfolio.thumb(data-ng-if="view == 'thumb'")
   div.mod.hero(data-ng-repeat="item in portfolioList | orderBy: $index: true")
-    img(data-ng-src="img/portfolio/{{item.thumb}}.jpg")
+    img(data-ng-src="img/portfolio/{{item.thumb}}.jpg", alt="")
     a(href="portfolio/{{item.key}}")
       span {{ item.project }}
       span.btn View Project
