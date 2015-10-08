@@ -22,6 +22,12 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
             title: 'Experience',
             templateUrl: '/templates/experience/experience.view.html',
             controller: 'ExperienceController'
+        })
+
+        .when('/contact', {
+            title: 'Contact',
+            templateUrl: '/templates/contact/contact.view.html',
+            controller: 'ContactController'
         });
 
         // .otherwise({

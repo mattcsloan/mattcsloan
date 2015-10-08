@@ -14,6 +14,11 @@ module.exports = {
       key: 'experience',
       label: 'Experience',
       url: '/experience'
+    },
+    {
+      key: 'contact',
+      label: 'Contact',
+      url: '/contact'
     }  
   ]
 };
