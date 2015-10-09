@@ -1,6 +1,7 @@
 //var Portfolio = require('./models/portfolio');
 var navigation = require('./data/navigation');
 var portfolioList = require('./data/portfolio/list');
+var portfolioDetail = require('./data/portfolio/detail');
 var experience = require('./data/experience/experience');
 
 module.exports = function(app) {
@@ -14,6 +15,17 @@ module.exports = function(app) {
 
     app.get('/api/portfolio', function(req, res) {
         res.json(201, portfolioList);
+    });
+
+    app.get('/api/portfolio/:id', function(req, res) {
+        var id = req.params.id;
+        var items = portfolioDetail;
+        for(var i = 0; i < items.length; i++) {
+            var item = items[i];
+            if(item.id == id) {
+                res.json(201, item.item);
+            }
+        }
     });
 
     app.get('/api/experience', function(req, res) {

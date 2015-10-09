@@ -6,6 +6,7 @@ angular.module('sloanApp', [
     'MainCtrl', 
     'HomeCtrl', 
     'PortfolioCtrl', 
+    'PortfolioDetailCtrl', 
     'ExperienceCtrl',
     'ContactCtrl'
   ]);

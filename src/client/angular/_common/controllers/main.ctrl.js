@@ -1,10 +1,11 @@
 angular.module('MainCtrl', []).controller('MainController', function($scope, $http) {
+  var vm = this;
 
   $scope.tagline = 'main';  
 
-  $http.get('api/navigation')
+  $http.get('/api/navigation')
     .success(function (res) {
-      $scope.navigation = res
+      vm.navigation = res;
     });
 
   $scope.$on('$routeChangeSuccess', function (event, data) {

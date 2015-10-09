@@ -12,6 +12,12 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
             redirectTo: '/'
         })
 
+        .when('/portfolio/:id', {
+            title: 'Portfolio Detail',
+            templateUrl: '/templates/portfolio/detail/detail.view.html',
+            controller: 'PortfolioDetailController'
+        })
+
         .when('/portfolio', {
             title: 'Portfolio',
             templateUrl: '/templates/portfolio/portfolio.view.html',

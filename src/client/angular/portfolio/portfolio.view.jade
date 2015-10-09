@@ -5,7 +5,7 @@ h1 {{ title }}
 div.portfolio.thumb(data-ng-if="view == 'thumb'")
   div.mod.hero(data-ng-repeat="item in portfolioList | orderBy: $index: true")
     img(data-ng-src="img/portfolio/{{item.thumb}}.jpg", alt="")
-    a(href="portfolio/{{item.key}}")
+    a(href="portfolio/{{item.id}}")
       span {{ item.project }}
       span.btn View Project
 table.portfolio.list(data-ng-if="view == 'list'")
@@ -15,18 +15,18 @@ table.portfolio.list(data-ng-if="view == 'list'")
     th Employer
     th Type
     th Tools
-  tr(data-ng-repeat="item in portfolioList | orderBy: $index: true", data-ng-href="portfolio/{{item.key}}")
+  tr(data-ng-repeat="item in portfolioList | orderBy: $index: true", data-ng-href="portfolio/{{item.id}}")
     td
-      a(href="portfolio/{{item.key}}") {{ item.project }}
+      a(href="portfolio/{{item.id}}") {{ item.project }}
     td.client
-      a(href="portfolio/{{item.key}}")
+      a(href="portfolio/{{item.id}}")
         img(alt="{{item.client}}", src="img/clients/client_{{item.client}}.png")
     td.employer
-      a(href="portfolio/{{item.key}}")
+      a(href="portfolio/{{item.id}}")
         img(alt="{{item.employer}}", src="img/employer/logo_{{item.employer}}.png")
     td.type
-      a(href="portfolio/{{item.key}}")
+      a(href="portfolio/{{item.id}}")
         img(alt="{{item.type}}", src="img/icons/icon_device_{{item.type}}.png")
     td.tools
-      a(href="portfolio/{{item.key}}")
+      a(href="portfolio/{{item.id}}")
         img(data-ng-repeat="tool in item.tools", src="img/icons/icon_{{tool}}.png")
