@@ -1,7 +1,6 @@
-angular.module('PortfolioCtrl', []).controller('PortfolioController', function($scope, $http) {
+angular.module('PortfolioCtrl', []).controller('PortfolioController', function($scope, $http, Page) {
 
-  $scope.title = 'Portfolio';
-
+  Page.setTitle('Portfolio');
   // $scope.view = 'thumb';
   // $scope.toggleView = function(item) {
   //   if(item !== $scope.view) {

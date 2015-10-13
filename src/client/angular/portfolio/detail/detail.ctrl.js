@@ -1,7 +1,6 @@
-angular.module('PortfolioDetailCtrl', []).controller('PortfolioDetailController', function($scope, $http, $routeParams) {
+angular.module('PortfolioDetailCtrl', []).controller('PortfolioDetailController', function($scope, $http, $routeParams, Page) {
 
   $scope.title = 'Item';
-
   $http.get('/api/portfolio/' + $routeParams.id)
     .success(function (res) {
       $scope.portfolioDetail = res;
@@ -9,5 +8,6 @@ angular.module('PortfolioDetailCtrl', []).controller('PortfolioDetailController'
   $http.get('/api/portfolio/preview/' + $routeParams.id)
     .success(function (res) {
       $scope.portfolioPreview = res;
+      Page.setTitle(res.project);
     });
 });

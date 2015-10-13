@@ -3,7 +3,6 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
     $routeProvider
 
         .when('/', {
-            title: 'Home',
             templateUrl: '/templates/home/home.view.html',
             controller: 'HomeController'
         })
@@ -13,25 +12,21 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
         })
 
         .when('/portfolio/:id', {
-            title: 'Portfolio Detail',
             templateUrl: '/templates/portfolio/detail/detail.view.html',
             controller: 'PortfolioDetailController'
         })
 
         .when('/portfolio', {
-            title: 'Portfolio',
             templateUrl: '/templates/portfolio/portfolio.view.html',
             controller: 'PortfolioController'
         })
 
         .when('/experience', {
-            title: 'Experience',
             templateUrl: '/templates/experience/experience.view.html',
             controller: 'ExperienceController'
         })
 
         .when('/contact', {
-            title: 'Contact',
             templateUrl: '/templates/contact/contact.view.html',
             controller: 'ContactController'
         });
