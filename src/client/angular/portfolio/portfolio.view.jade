@@ -1,14 +1,14 @@
 div.toggle
-  a(data-ng-click="toggleView('thumb')", data-ng-class="{true: 'active'}[view == 'thumb']") Thumb
-  a(data-ng-click="toggleView('list')", data-ng-class="{true: 'active'}[view == 'list']") List
+  a(data-ng-click="main.toggleView('thumb')", data-ng-class="{true: 'active'}[main.view == 'thumb']") Thumb
+  a(data-ng-click="main.toggleView('list')", data-ng-class="{true: 'active'}[main.view == 'list']") List
 h1 {{ title }}
-div.portfolio.thumb(data-ng-if="view == 'thumb'")
+div.portfolio.thumb(data-ng-if="main.view == 'thumb'")
   div.mod.hero(data-ng-repeat="item in portfolioList | orderBy: $index: true")
     img(data-ng-src="img/portfolio/{{item.thumb}}.jpg", alt="")
     a(href="portfolio/{{item.id}}")
       span {{ item.project }}
       span.btn View Project
-table.portfolio.list(data-ng-if="view == 'list'")
+table.portfolio.list(data-ng-if="main.view == 'list'")
   tr
     th Project
     th Client

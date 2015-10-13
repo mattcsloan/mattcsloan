@@ -1,23 +1,27 @@
 module.exports = [
     {
         id: 1,
-        item: {
-            heading: 'Tweeters Website Design',
-            copy: 'A website design that I created for Tweeters Chicken Crib while working at SMK Advertising in Columbus, Ohio. For this project, I was only responsible for the home page design and the flash-based header animation that the client requested. All interior pages and website build was handled by another employee at SMK.',
-            image: 'tweeters_web_01',
-            link: null,
-            zoom: false
-        }
+        item: [
+            {
+                heading: 'Tweeters Website Design',
+                copy: 'A website design that I created for Tweeters Chicken Crib while working at SMK Advertising in Columbus, Ohio. For this project, I was only responsible for the home page design and the flash-based header animation that the client requested. All interior pages and website build was handled by another employee at SMK.',
+                image: 'tweeters_web_01',
+                link: null,
+                zoom: false
+            }
+        ]
     },
     {
         id: 3,
-        item: {
-            heading: 'Logo and Brand Creation',
-            copy: 'I redesigned the logo for The Ecoplumbers while working at SMK. The logo gave them a look that they could build their entire brand around. The company is built on the idea of living eco-friendly and their logo represents that with the water droplet, leaf, and abstract recycling element.',
-            image: 'ecoplumbers_01',
-            link: null,
-            zoom: false
-        }
+        item: [
+            {
+                heading: 'Logo and Brand Creation',
+                copy: 'I redesigned the logo for The Ecoplumbers while working at SMK. The logo gave them a look that they could build their entire brand around. The company is built on the idea of living eco-friendly and their logo represents that with the water droplet, leaf, and abstract recycling element.',
+                image: 'ecoplumbers_01',
+                link: null,
+                zoom: false
+            }
+        ]
     },
     {
         id: 4,
@@ -40,13 +44,15 @@ module.exports = [
     },
     {
         id: 5,
-        item: {
-            heading: 'The Shiloh Branding',
-            copy: "When The Shiloh contacted me for a website design, they were using different fonts as their logo and they all looked totally different. My first suggestion was to create their brand and unify their appearance before improving upon their web presence. The tree in the logo is an indicator of The Shiloh's atmosphere. The Shiloh is a banquet and conference center, but it also hosts weddings and is a great place to use as the backdrop for photography and the logo needs to show that. The tree in the logo is very similar to the tree that is by the entrance of the Shiloh.",
-            image: 'shiloh_logo_01',
-            link: null,
-            zoom: false
-        }
+        item: [
+            {
+                heading: 'The Shiloh Branding',
+                copy: "When The Shiloh contacted me for a website design, they were using different fonts as their logo and they all looked totally different. My first suggestion was to create their brand and unify their appearance before improving upon their web presence. The tree in the logo is an indicator of The Shiloh's atmosphere. The Shiloh is a banquet and conference center, but it also hosts weddings and is a great place to use as the backdrop for photography and the logo needs to show that. The tree in the logo is very similar to the tree that is by the entrance of the Shiloh.",
+                image: 'shiloh_logo_01',
+                link: null,
+                zoom: false
+            }
+        ]
     },
     {
         id: 6,
@@ -83,13 +89,15 @@ module.exports = [
     },
     {
         id: 7,
-        item: {
-            heading: 'Brand Concept',
-            copy: "I was able to establish the brand for Medical Business Billing Systems in Columbus. After that, I carried the brand through to their business card design and web presence. Being a reseller of McKesson medical software, the logo needed to be able to appear alongside the McKessen logo quite often. For this reason, the logo needed to have a unique logotype that could stand alone. Once I had modified the font to give MBBS a unique and custom logotype, I created a mark to accompany the type. The mark represents a stack of bills along with a common medical symbol to tie the two together. The logo is dynamic enough that it can stand alone as a logotype, appear with the logo element, or the logo element can appear by itself.",
-            image: 'mbbs_logo_01',
-            link: null,
-            zoom: false
-        }
+        item: [
+            {
+                heading: 'Brand Concept',
+                copy: "I was able to establish the brand for Medical Business Billing Systems in Columbus. After that, I carried the brand through to their business card design and web presence. Being a reseller of McKesson medical software, the logo needed to be able to appear alongside the McKessen logo quite often. For this reason, the logo needed to have a unique logotype that could stand alone. Once I had modified the font to give MBBS a unique and custom logotype, I created a mark to accompany the type. The mark represents a stack of bills along with a common medical symbol to tie the two together. The logo is dynamic enough that it can stand alone as a logotype, appear with the logo element, or the logo element can appear by itself.",
+                image: 'mbbs_logo_01',
+                link: null,
+                zoom: false
+            }
+        ]
     },
     {
         id: 8,
@@ -152,23 +160,27 @@ module.exports = [
     },
     {
         id: 10,
-        item: {
-            heading: 'Crocs Image Gallery Build',
-            copy: "These Crocs sites were created to showcase a deal of the day. While these were designed by another designer at Knotice, I was in charge of building out the sites. The main feature that I added to these sites was a jQuery enabled mobile gallery. I set it up so that an employee at Crocs is now able to copy over an existing product microsite, change the copy using Knotice's content management system and upload all the photos for the gallery and it will all automatically resize the images and maintain the proper format for the image gallery.",
-            image: 'crocs_01',
-            link: null,
-            zoom: false
-        }
+        item: [
+            {
+                heading: 'Crocs Image Gallery Build',
+                copy: "These Crocs sites were created to showcase a deal of the day. While these were designed by another designer at Knotice, I was in charge of building out the sites. The main feature that I added to these sites was a jQuery enabled mobile gallery. I set it up so that an employee at Crocs is now able to copy over an existing product microsite, change the copy using Knotice's content management system and upload all the photos for the gallery and it will all automatically resize the images and maintain the proper format for the image gallery.",
+                image: 'crocs_01',
+                link: null,
+                zoom: false
+            }
+        ]
     },
     {
         id: 12,
-        item: {
-            heading: 'Landing Page and Signup Form',
-            copy: "This was a mobile landing page that was targeted at readers of Fortune Magazine. MARS had an advertisement in the January issue that featured a QR code. When the user scanned the QR code they landed on this page. If the user chose to begin a free trial to have MARS Drinks brewers set up in their office, they were directed to a page where they could fill out the proper form to start the trial.",
-            image: 'mars_fortune_01',
-            link: null,
-            zoom: false
-        }
+        item: [
+            {
+                heading: 'Landing Page and Signup Form',
+                copy: "This was a mobile landing page that was targeted at readers of Fortune Magazine. MARS had an advertisement in the January issue that featured a QR code. When the user scanned the QR code they landed on this page. If the user chose to begin a free trial to have MARS Drinks brewers set up in their office, they were directed to a page where they could fill out the proper form to start the trial.",
+                image: 'mars_fortune_01',
+                link: null,
+                zoom: false
+            }
+        ]
     },
     {
         id: 13,

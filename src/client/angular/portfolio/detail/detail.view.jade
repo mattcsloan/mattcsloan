@@ -1,1 +1,26 @@
-h1(data-ng-repeat="item in portfolioDetail") {{item.heading}}
+table.portfolio.list
+  tr
+    th Project
+    th Client
+    th Employer
+    th Type
+    th Tools
+  tr
+    td {{ portfolioPreview.project }}
+    td.client
+      img(alt="{{portfolioPreview.client}}", src="/img/clients/client_{{portfolioPreview.client}}.png")
+    td.employer
+      img(alt="{{portfolioPreview.employer}}", src="/img/employer/logo_{{portfolioPreview.employer}}.png")
+    td.type
+      img(alt="{{portfolioPreview.type}}", src="/img/icons/icon_device_{{portfolioPreview.type}}.png")
+    td.tools
+      img(data-ng-repeat="tool in portfolioPreview.tools", src="/img/icons/icon_{{tool}}.png")
+.clear(data-ng-repeat="item in portfolioDetail")
+  .main
+    .mod
+      img(data-ng-src="/img/portfolio/{{item.image}}.jpg", alt="{{item.heading}}")
+  .secondary
+    h2 {{item.heading}}
+    p {{item.copy}}
+    p(data-ng-if="item.link")
+      a(data-ng-href="{{item.link}}", target="_blank") View Live Version
