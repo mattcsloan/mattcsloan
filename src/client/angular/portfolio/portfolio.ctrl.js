@@ -1,4 +1,4 @@
-angular.module('PortfolioCtrl', []).controller('PortfolioController', function($scope, $http, Page) {
+angular.module('PortfolioCtrl', []).controller('PortfolioController', function($scope, $http, Page, $location) {
 
   Page.setTitle('Portfolio');
   // $scope.view = 'thumb';
@@ -12,4 +12,8 @@ angular.module('PortfolioCtrl', []).controller('PortfolioController', function($
     .success(function (res) {
       $scope.portfolioList = res;
     });
+
+  $scope.openItem = function(item) {
+    $location.path('portfolio/' + item.id);
+  };
 });

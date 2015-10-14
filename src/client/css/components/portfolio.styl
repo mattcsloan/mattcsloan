@@ -49,18 +49,25 @@
     &.tools
       img
         opacity 0.4
-    &:hover
-      img
-        opacity 1
-      &.tools
-        img
-          opacity 0.7
+    a
+      color #555
   .client
     img
       width 60px
   tr
     &:nth-child(even)
       background #fefefe
+    &:hover
+      cursor pointer
+      td
+        img
+          opacity 1
+        &.tools
+          img
+            opacity 0.7
+        a
+          color $main-link
+          text-decoration none
     td
     th
       color #aaa
@@ -77,10 +84,21 @@
   .client
   .employer
   .type
-    a
-      display block
-      img
-        margin 0 auto
+    text-align center
+    img
+      margin 0 auto
+  &.detail
+    margin-bottom 30px
+    tr
+      td
+        img
+          opacity 1
+        &.tools
+          img
+            opacity 1
+      &:hover
+        cursor default
+      
 .toggle
   float right
   a
