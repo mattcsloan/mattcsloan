@@ -88,109 +88,130 @@ module.exports = {
     {
       skill: 'html5',
       comfort: 10,
-      uses: 'Web Development (Page Structure)'
+      uses: 'Web Development (Page Structure)',
+      icon: 'html5'
     },
     {
       skill: 'css3',
       comfort: 10,
-      uses: 'Web Page Styling/Presentation'
+      uses: 'Web Page Styling/Presentation',
+      icon: 'css3'
     },
     {
       skill: 'javascript',
       comfort: 9,
-      uses: 'Web Page Interaction'
+      uses: 'Web Page Interaction',
+      icon: 'js'
     },
     {
       skill: 'node.js / express',
       comfort: 7,
-      uses: 'Server-side Javascript for Web Applications'
+      uses: 'Server-side Javascript for Web Applications',
+      icon: 'node'
     },
     {
       skill: 'AngularJS',
       comfort: 8,
-      uses: 'Web Application Framework'
+      uses: 'Web Application Framework',
+      icon: 'angular'
     },
     {
       skill: 'jquery',
       comfort: 10,
-      uses: 'Web Page Interaction (a javascript library)'
+      uses: 'Web Page Interaction (a javascript library)',
+      icon: 'jquery'
     },
     {
       skill: 'asp.net 4',
       comfort: 5,
-      uses: 'Web Application Development'
+      uses: 'Web Application Development',
+      icon: 'asp'
     },
     {
       skill: 'c# 2010',
       comfort: 5,
-      uses: 'Web Application Development'
+      uses: 'Web Application Development',
+      icon: 'c-sharp'
     },
     {
       skill: 'xml / json',
       comfort: 10,
-      uses: 'RSS Feeds, Web Application Data Storage'
+      uses: 'RSS Feeds, Web Application Data Storage',
+      icon: 'xml'
     },
     {
       skill: 'mongoDB / mongoose',
       comfort: 8,
-      uses: 'NoSQL Data Storage'
+      uses: 'NoSQL Data Storage',
+      icon: 'mongodb'
     },
     {
       skill: 'sql server / mysql',
       comfort: 5,
-      uses: 'Database Servers, Store/Retrieve Data'
+      uses: 'Database Servers, Store/Retrieve Data',
+      icon: 'mysql'
     },
     {
       skill: 'php',
       comfort: 5,
-      uses: 'Form Handling, Templating (using includes)'
+      uses: 'Form Handling, Templating (using includes)',
+      icon: 'php'
     },
     {
       skill: 'wordpress',
       comfort: 10,
-      uses: 'Blogging, Custom Wordpress Themes'
+      uses: 'Blogging, Custom Wordpress Themes',
+      icon: 'wordpress'
     },
     {
       skill: 'joomla',
       comfort: 4,
-      uses: 'Alternative Content Management System'
+      uses: 'Alternative Content Management System',
+      icon: 'joomla'
     },
     {
       skill: 'git',
       comfort: 10,
-      uses: 'Version Control'
+      uses: 'Version Control',
+      icon: 'git'
     }
   ],
   design: [
     {
       skill: 'adobe photoshop',
       comfort: 10,
-      uses: 'Web Design, Photo Manipulation'
+      uses: 'Web Design, Photo Manipulation',
+      icon: 'ps'
     },
     {
       skill: 'adobe illustrator',
       comfort: 9,
-      uses: ' Logos, Icons, Print Design, Vectors'
+      uses: ' Logos, Icons, Print Design, Vectors',
+      icon: 'ai'
     },
     {
       skill: 'adobe indesign',
       comfort: 8,
-      uses: 'Page Layout, Brochures'
+      uses: 'Page Layout, Brochures',
+      icon: 'id'
     },
     {
       skill: 'adobe flash',
       comfort: 7,
-      uses: 'Web Animations'
+      uses: 'Web Animations',
+      icon: 'fl'
     },
     {
       skill: 'adobe fireworks',
       comfort: 7,
-      uses: ' Photoshop Alternative'
+      uses: ' Photoshop Alternative',
+      icon: 'fw'
     },
     {
       skill: 'microsoft office',
       comfort: 10,
-      uses: 'Spreadsheets, Documents, Presentations'
+      uses: 'Spreadsheets, Documents, Presentations',
+      icon: 'office'
     }
   ]
 };

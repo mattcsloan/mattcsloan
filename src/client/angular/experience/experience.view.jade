@@ -20,7 +20,11 @@ h1 {{ title }}
 .secondary       
   h2 Development Skills
   ul
-    li(data-ng-repeat="item in experience.development") {{item.skill}}
+    li(data-ng-repeat="item in experience.development")
+      i.icon(data-ng-class="'icon-{{item.icon}}'")
+      | {{item.skill}}
   h2 Design Skills
   ul
-    li(data-ng-repeat="item in experience.design") {{item.skill}}
+    li(data-ng-repeat="item in experience.design")
+      i.icon(data-ng-class="'icon-{{item.icon}}'")
+      | {{item.skill}}
