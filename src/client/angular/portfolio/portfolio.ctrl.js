@@ -1,12 +1,7 @@
 angular.module('PortfolioCtrl', []).controller('PortfolioController', function($scope, $http, Page, $location) {
 
   Page.setTitle('Portfolio');
-  // $scope.view = 'thumb';
-  // $scope.toggleView = function(item) {
-  //   if(item !== $scope.view) {
-  //     $scope.view = $scope.view === 'thumb' ? 'list': 'thumb';
-  //   }
-  // };
+  $scope.title = 'Portfolio';
 
   $http.get('api/portfolio')
     .success(function (res) {

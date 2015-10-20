@@ -1,7 +1,9 @@
 div.toggle
-  a(data-ng-click="main.toggleView('thumb')", data-ng-class="{true: 'active'}[main.view == 'thumb']") Thumb
-  a(data-ng-click="main.toggleView('list')", data-ng-class="{true: 'active'}[main.view == 'list']") List
-h1 {{ title }}
+  a(data-ng-click="main.toggleView('thumb')", data-ng-class="{true: 'active'}[main.view == 'thumb']")
+    i.icon.icon-thumb
+  a(data-ng-click="main.toggleView('list')", data-ng-class="{true: 'active'}[main.view == 'list']")
+    i.icon.icon-list
+h1(data-ng-bind="title")
 div.portfolio.thumb(data-ng-if="main.view == 'thumb'")
   div.mod(data-ng-repeat="item in portfolioList | orderBy: $index: true")
     img(data-ng-src="img/portfolio/{{item.thumb}}.jpg", alt="")

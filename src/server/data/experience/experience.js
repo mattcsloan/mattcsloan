@@ -4,7 +4,7 @@ module.exports = {
       company: 'IgnitionOne',
       title: 'UX Developer',
       timeframe: 'march 2014 - present',
-      logo: 'ignitionone',
+      logo: 'employer-io',
       roles: [
         'full-stack development of marketing software platform',
         'owner of the UI/UX style guide used across all IgnitionOne solutions'
@@ -14,7 +14,7 @@ module.exports = {
       company: 'Knotice (acquired by IgnitionOne)',
       title: 'technical web designer',
       timeframe: 'may 2010 - march 2014',
-      logo: 'knotice',
+      logo: 'employer-knotice',
       roles: [
         'mobile microsites for Comcast, Bayer, Crocs, Charter, Canon, MARS Drinks, Cub Cadet, and others',
         'website design and development for Comcast, Charter, Diebold, Kraftmaid, and others',
@@ -25,7 +25,7 @@ module.exports = {
       company: 'SMK Advertising',
       title: 'web and graphic designer',
       timeframe: 'march 2009 - may 2010',
-      logo: 'smk',
+      logo: 'employer-smk',
       roles: [
         'client website design and development',
         'client identities and branding',
@@ -47,7 +47,7 @@ module.exports = {
       company: 'American Red Cross of Greater Columbus',
       title: 'marketing coordinator, lead designer',
       timeframe: 'january 2008 - august 2008',
-      logo: 'arc',
+      logo: 'employer-red-cross',
       roles: [
         'designs: campaign reports, brochures, flyers, posters, invitations',
         'head of design for four seasonal marketing campaigns, oversee website redesign'
@@ -67,7 +67,7 @@ module.exports = {
       company: 'Multiple Design Internships',
       title: 'web and graphic designer',
       timeframe: 'may 2006 - january 2008',
-      logo: 'chantler',
+      logo: 'employer-chantler-properties',
       roles: [
         'website designs, user interface design, web banner advertisements',
         'logos, business cards, and flyers'
@@ -81,7 +81,7 @@ module.exports = {
       timeframe: 'september 2004 - march 2009',
       major: 'major: communication technology',
       minor: 'minor: visual communication design',
-      logo: 'osu'
+      logo: 'school-osu'
     }
   ],
   development: [

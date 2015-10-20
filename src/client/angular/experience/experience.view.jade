@@ -1,22 +1,25 @@
-h1 {{ title }}
+h1(data-ng-bind="title")
 .main
-  .mod(data-ng-repeat="item in experience.items")
-    img.exp-logo(src="img/employer/logo_{{item.logo}}.png", alt="{{item.company}}")
-    h3 {{item.company}}
+  .mod(data-ng-repeat="item in experience.items", data-ng-class="{ 'active': isActive }", data-ng-init="isActive = false"
+       data-ng-click="isActive = !isActive")
+    i.exp-logo.icon(data-ng-if="item.logo.indexOf('employer') > -1", data-ng-class="'icon-{{item.logo}}'")
+    span.exp-logo(data-ng-if="item.logo.indexOf('employer') == -1")
+      img(src="img/employer/logo_{{item.logo}}.png", alt="{{item.company}}")
+    h3(data-ng-bind="item.company")
     h4
-      em {{item.title}}
+      em(data-ng-bind="item.title")
       | , {{item.timeframe}}
     ul.experience-details
-      li(data-ng-repeat="detail in item.roles") {{detail}}
+      li(data-ng-repeat="detail in item.roles", data-ng-bind="detail")
   h2 Education
-  .mod(data-ng-repeat="item in experience.education")
-    img.exp-logo(src="img/employer/logo_{{item.logo}}.png", alt="{{item.school}}")
-    h3 {{item.school}}
+  .mod.education(data-ng-repeat="item in experience.education")
+    i.icon.exp-logo(data-ng-class="'icon-{{item.logo}}'")
+    h3(data-ng-bind="item.school")
     h4
-      em {{item.degree}}
+      em(data-ng-bind="item.degree")
       | , {{item.timeframe}}
-    h4 {{item.major}}
-    h4 {{item.minor}}
+    h4(data-ng-bind="item.major")
+    h4(data-ng-bind="item.minor")
 .secondary       
   h2 Development Skills
   ul
