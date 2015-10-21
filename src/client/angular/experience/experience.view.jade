@@ -11,6 +11,7 @@ h1(data-ng-bind="title")
       | , {{item.timeframe}}
     ul.experience-details
       li(data-ng-repeat="detail in item.roles", data-ng-bind="detail")
+    a.expand Expand
   h2 Education
   .mod.education(data-ng-repeat="item in experience.education")
     i.icon.exp-logo(data-ng-class="'icon-{{item.logo}}'")

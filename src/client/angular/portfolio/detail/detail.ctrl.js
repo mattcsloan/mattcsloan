@@ -8,6 +8,7 @@ angular.module('PortfolioDetailCtrl', []).controller('PortfolioDetailController'
   $http.get('/api/portfolio/preview/' + $routeParams.id)
     .success(function (res) {
       $scope.portfolioPreview = res;
+      $scope.portfolioTools = res.tools;
       Page.setTitle(res.project);
     });
 });

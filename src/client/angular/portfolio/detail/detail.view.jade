@@ -14,13 +14,15 @@ table.portfolio.list.detail(cellpadding="0", cellspacing="0")
     td.type
       img(alt="{{portfolioPreview.type}}", src="/img/icons/icon_device_{{portfolioPreview.type}}.png")
     td.tools
-      img(data-ng-repeat="tool in portfolioPreview.tools", src="/img/icons/icon_{{tool}}.png")
-.clear(data-ng-repeat="item in portfolioDetail")
+      span.tool(data-ng-repeat="tool in portfolioPreview.tools")
+        img(src="/img/icons/icon_{{tool.tool}}.png" alt="{{tool.label}}")
+        span.tooltip {{tool.label}}
+.detail.clear(data-ng-repeat="item in portfolioDetail")
   .main
     .mod.hero
       img(data-ng-src="/img/portfolio/{{item.image}}.jpg", alt="{{item.heading}}")
+      a.btn.btn-icon(data-ng-if="item.link", data-ng-href="{{item.link}}", target="_blank") 
+        i.icon.icon-link
   .secondary
     h2 {{item.heading}}
-    p {{item.copy}}
-    p(data-ng-if="item.link")
-      a(data-ng-href="{{item.link}}", target="_blank") View Live Version
+    p {{item.copy}}      

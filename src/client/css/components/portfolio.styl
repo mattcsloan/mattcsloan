@@ -99,8 +99,9 @@
       &:last-child
         text-align right
   .tools
-    img
+    .tool
       float right
+    img
       margin-left 4px
   .client
   .employer
@@ -119,8 +120,49 @@
             opacity 1
       &:hover
         cursor default
-      
+.tooltip
+  position absolute
+  bottom 28px
+  right -10px
+  padding 4px 10px
+  border-radius 4px
+  box-shadow 0 2px 2px rgba(0,0,0,0.05)
+  border 1px solid #ddd
+  background #fff
+  white-space nowrap
+  &:before
+  &:after
+    content ''
+    display block
+    width 0
+    height 0
+    border 7px solid transparent
+    border-top-color #fff
+    position absolute
+    bottom -14px
+    right 13px
+  &:before
+    border-top-color #ddd
+    bottom -15px
+.tool
+  position relative
+  &:after
+    content ''
+    display block
+    clear both
+  .tooltip
+    display none
+  &:hover
+    .tooltip
+      display block
 .toggle
   float right
   a
     float left
+.detail
+  .mod.hero
+    position relative
+    a
+      position absolute
+      right 30px
+      bottom -16px

@@ -27,4 +27,6 @@ table.portfolio.list(data-ng-if="main.view == 'list'", cellpadding="0", cellspac
     td.type
       img(alt="{{item.type}}", src="img/icons/icon_device_{{item.type}}.png")
     td.tools
-      img(data-ng-repeat="tool in item.tools", src="img/icons/icon_{{tool}}.png")
+      span.tool(data-ng-repeat="tool in item.tools")
+        img(src="/img/icons/icon_{{tool.tool}}.png" alt="{{tool.label}}")
+        span.tooltip {{tool.label}}

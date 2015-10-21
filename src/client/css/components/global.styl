@@ -72,21 +72,56 @@ p
   font-size 24px
 .btn
 .toggle a
-  background $main-link
+  background linear-gradient(#f5f5f5, #fff)
+  color #aaa
   border-radius 2px
-  color #fff
+  border 1px solid #f5f5f5
   text-align center
-  padding 6px 12px 3px 12px
+  padding 6px 12px
+  position relative
+  display inline-block
+  margin 4px
+  &:after
+    content ''
+    position absolute
+    z-index -1
+    top -4px
+    right -4px
+    bottom -4px
+    left -4px
+    background #fff
+    border 1px solid #e5e5e5
+    border-radius 2px
+    box-shadow 0 2px 1px rgba(0,0,0,0.05)
   &:hover
-    background $main-link-hover
-    color #fff
+    background linear-gradient(#fff, #f5f5f5)
+    color #888
     text-decoration none
+  &.primary
+    background $main-link
+    color #fff
+    &:after
+      display none
+    &:hover
+      background $main-link-hover
+      color #fff
+  &.btn-icon
+    border-radius 15px
+    line-height 18px
+    height 18px
+    padding 6px
+    i
+      font-size 18px
+    &:after
+      border-radius 18px
 .toggle
   a
     background linear-gradient(#eee, #fafafa)
     border-radius 0
     color #aaa
     position relative
+    padding 6px 12px 3px 12px
+    margin 0
     &:after
       content ''
       position absolute
@@ -151,6 +186,7 @@ p
   &.hero
     padding 3px
     margin-bottom 10px
+    overflow visible
   ul
     margin 20px 0 0 15px
     padding 0

@@ -6,7 +6,7 @@ module.exports = [
         client: 'Tweeters',
         employer: 'SMK',
         type: 'web',
-        tools: ['ps','ai','fl'],
+        tools: [{ tool: 'ps', label: 'Adobe Photoshop' },{ tool: 'ai', label: 'Adobe Illustrator' },{ tool: 'fl', label: 'Adobe Flash' }],
         thumb: 'tweeters_web_01'
     },
     {
@@ -16,7 +16,7 @@ module.exports = [
         client: 'Ecoplumbers',
         employer: 'SMK',
         type: 'logo',
-        tools: ['ai'],
+        tools: [{ tool: 'ai', label: 'Adobe Illustrator' }],
         thumb: 'ecoplumbers_01'
     },
     {
@@ -26,7 +26,7 @@ module.exports = [
         client: 'PC',
         employer: 'PC',
         type: 'web',
-        tools: ['ps','html','css','js','jq','php'],
+        tools: [{ tool: 'ps', label: 'Adobe Photoshop' },{ tool: 'html', label: 'HTML5' },{ tool: 'css', label: 'CSS3' },{ tool: 'js', label: 'JavaScript' },{ tool: 'jq', label: 'jQuery' },{ tool: 'php', label: 'PHP' }],
         thumb: 'pc_web_01'
     },
     {
@@ -36,7 +36,7 @@ module.exports = [
         client: 'Shiloh',
         employer: 'mcs',
         type: 'logo',
-        tools: ['ai'],
+        tools: [{ tool: 'ai', label: 'Adobe Illustrator' }],
         thumb: 'shiloh_logo_01'
     },
     {
@@ -46,7 +46,7 @@ module.exports = [
         client: 'Shiloh',
         employer: 'mcs',
         type: 'web',
-        tools: ['ps'],
+        tools: [{ tool: 'ps', label: 'Adobe Photoshop' }],
         thumb: 'shiloh_web_01'
     },
     {
@@ -56,7 +56,7 @@ module.exports = [
         client: 'mbbs',
         employer: 'mcs',
         type: 'logo',
-        tools: ['ai'],
+        tools: [{ tool: 'ai', label: 'Adobe Illustrator' }],
         thumb: 'mbbs_logo_01'
     },
     {
@@ -66,7 +66,7 @@ module.exports = [
         client: 'mbbs',
         employer: 'mcs',
         type: 'web',
-        tools: ['ps','html','css','js','jq','php'],
+        tools: [{ tool: 'ps', label: 'Adobe Photoshop' },{ tool: 'html', label: 'HTML5' },{ tool: 'css', label: 'CSS3' },{ tool: 'js', label: 'JavaScript' },{ tool: 'jq', label: 'jQuery' },{ tool: 'php', label: 'PHP' }],
         thumb: 'mbbs_web_01'
     },
     {
@@ -76,7 +76,7 @@ module.exports = [
         client: 'Brighthouse',
         employer: 'Knotice',
         type: 'email',
-        tools: ['ps','html','css'],
+        tools: [{ tool: 'ps', label: 'Adobe Photoshop' },{ tool: 'html', label: 'HTML5' },{ tool: 'css', label: 'CSS3' }],
         thumb: 'brighthouse_nl_01'
     },
     {
@@ -86,7 +86,7 @@ module.exports = [
         client: 'Crocs',
         employer: 'Knotice',
         type: 'mobile',
-        tools: ['html','css','js','jq'],
+        tools: [{ tool: 'html', label: 'HTML5' },{ tool: 'css', label: 'CSS3' },{ tool: 'js', label: 'JavaScript' },{ tool: 'jq', label: 'jQuery' }],
         thumb: 'crocs_01'
     },
     {
@@ -96,7 +96,7 @@ module.exports = [
         client: 'Mars',
         employer: 'Knotice',
         type: 'mobile',
-        tools: ['ps','html','css','js','jq'],
+        tools: [{ tool: 'ps', label: 'Adobe Photoshop' },{ tool: 'html', label: 'HTML5' },{ tool: 'css', label: 'CSS3' },{ tool: 'js', label: 'JavaScript' },{ tool: 'jq', label: 'jQuery' }],
         thumb: 'mars_fortune_01'
     },
     {
@@ -106,7 +106,7 @@ module.exports = [
         client: 'Catwalk',
         employer: 'Knotice',
         type: 'mobile',
-        tools: ['ps'],
+        tools: [{ tool: 'ps', label: 'Adobe Photoshop' }],
         thumb: 'tigi_01'
     },
     {
@@ -116,7 +116,7 @@ module.exports = [
         client: 'Diebold',
         employer: 'Knotice',
         type: 'web',
-        tools: ['ps','html','css','js','jq'],
+        tools: [{ tool: 'ps', label: 'Adobe Photoshop' },{ tool: 'html', label: 'HTML5' },{ tool: 'css', label: 'CSS3' },{ tool: 'js', label: 'JavaScript' },{ tool: 'jq', label: 'jQuery' }],
         thumb: 'diebold_01'
     },
     {
@@ -126,7 +126,7 @@ module.exports = [
         client: 'MTD',
         employer: 'Knotice',
         type: 'mobile',
-        tools: ['ps','html','css'],
+        tools: [{ tool: 'ps', label: 'Adobe Photoshop' },{ tool: 'html', label: 'HTML5' },{ tool: 'css', label: 'CSS3' }],
         thumb: 'mtd_01'
     },
     {
@@ -136,7 +136,7 @@ module.exports = [
         client: 'Charter',
         employer: 'Knotice',
         type: 'mobile',
-        tools: ['ps','html','css','js','jq'],
+        tools: [{ tool: 'ps', label: 'Adobe Photoshop' },{ tool: 'html', label: 'HTML5' },{ tool: 'css', label: 'CSS3' },{ tool: 'js', label: 'JavaScript' },{ tool: 'jq', label: 'jQuery' }],
         thumb: 'cc_power_01'
     },
     {
@@ -146,7 +146,7 @@ module.exports = [
         client: 'Invacare',
         employer: 'Knotice',
         type: 'mobile',
-        tools: ['ps','html','css','js','jq'],
+        tools: [{ tool: 'ps', label: 'Adobe Photoshop' },{ tool: 'html', label: 'HTML5' },{ tool: 'css', label: 'CSS3' },{ tool: 'js', label: 'JavaScript' },{ tool: 'jq', label: 'jQuery' }],
         thumb: 'invacare_ds_01'
     },
     {
@@ -156,7 +156,7 @@ module.exports = [
         client: 'Westjet',
         employer: 'Knotice',
         type: 'mobile',
-        tools: ['ps'],
+        tools: [{ tool: 'ps', label: 'Adobe Photoshop' }],
         thumb: 'westjet_01'
     },
     {
@@ -166,7 +166,7 @@ module.exports = [
         client: 'xfinity',
         employer: 'Knotice',
         type: 'web',
-        tools: ['ps','html','css','js','jq'],
+        tools: [{ tool: 'ps', label: 'Adobe Photoshop' },{ tool: 'html', label: 'HTML5' },{ tool: 'css', label: 'CSS3' },{ tool: 'js', label: 'JavaScript' },{ tool: 'jq', label: 'jQuery' }],
         thumb: 'xfinity_video_01'
     },
     {
@@ -176,7 +176,7 @@ module.exports = [
         client: 'Charter',
         employer: 'Knotice',
         type: 'mobile',
-        tools: ['ps','html','css','js','jq'],
+        tools: [{ tool: 'ps', label: 'Adobe Photoshop' },{ tool: 'html', label: 'HTML5' },{ tool: 'css', label: 'CSS3' },{ tool: 'js', label: 'JavaScript' },{ tool: 'jq', label: 'jQuery' }],
         thumb: 'cc_compare_01'
     },
     // {
@@ -186,7 +186,7 @@ module.exports = [
     //     client: 'Canon',
     //     employer: 'Knotice',
     //     type: 'mobile',
-    //     tools: ['ps','html','css','js','jq'],
+    //     tools: [{ tool: 'ps', label: 'Adobe Photoshop' },{ tool: 'html', label: 'HTML5' },{ tool: 'css', label: 'CSS3' },{ tool: 'js', label: 'JavaScript' },{ tool: 'jq', label: 'jQuery' }],
     //     thumb: null
     // }
 ];
