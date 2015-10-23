@@ -1,40 +1,57 @@
-angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+angular.module('appRoutes', []).config(['$stateProvider', '$locationProvider', '$urlRouterProvider', function($stateProvider, $locationProvider, $urlRouterProvider) {
 
-    $routeProvider
+    $urlRouterProvider.otherwise("/");
 
-        .when('/', {
+    $stateProvider
+
+        .state('home', {
+            url: '/',
             templateUrl: '/templates/home/home.view.html',
             controller: 'HomeController'
         })
 
-        .when('/home', {
-            redirectTo: '/'
-        })
-
-        .when('/portfolio/:id', {
-            templateUrl: '/templates/portfolio/detail/detail.view.html',
-            controller: 'PortfolioDetailController'
-        })
-
-        .when('/portfolio', {
+        .state('portfolio', {
+            url: '/portfolio',
             templateUrl: '/templates/portfolio/portfolio.view.html',
             controller: 'PortfolioController'
         })
 
-        .when('/experience', {
+            .state('portfolio.detail', {
+                url: '/:portfolioId',
+                templateUrl: '/templates/portfolio/detail/detail.view.html',
+                controller: 'PortfolioDetailController',
+                resolve: {
+                    portfolioId: ['$stateParams', function($stateParams){
+                        console.log($stateParams.portfolioId);
+                        return $stateParams.portfolioId;
+                    // }],
+                    // portfolioDetail: ['$stateParams', function($stateParams){
+                    //   $http.get('/api/portfolio/' + $stateParams.portfolioId)
+                    //     .success(function (res) {
+                    //       return res;
+                    //     });
+                    // }],
+                    // portfolioPreview: ['$stateParams', function($stateParams){
+                    //   $http.get('/api/portfolio/preview/' + $stateParams.portfolioId)
+                    //     .success(function (res) {
+                    //       return res;
+                    //     });
+                    }]
+                }
+            })
+
+
+        .state('experience', {
+            url: '/experience',
             templateUrl: '/templates/experience/experience.view.html',
             controller: 'ExperienceController'
         })
 
-        .when('/contact', {
+        .state('contact', {
+            url: '/contact',
             templateUrl: '/templates/contact/contact.view.html',
             controller: 'ContactController'
         });
-
-        // .otherwise({
-        //     templateUrl:'errors/404.view.jade'
-        // });
-
 
     $locationProvider.html5Mode({
         enabled: true,

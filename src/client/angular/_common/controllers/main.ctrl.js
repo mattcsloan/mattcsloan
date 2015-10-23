@@ -8,11 +8,6 @@ angular.module('MainCtrl', []).controller('MainController', function($scope, $ht
       vm.navigation = res;
     });
 
-  // $scope.$on('$routeChangeSuccess', function (event, data) {
-  //   $scope.errormessage = '';
-  //   $scope.pageTitle = data.title + ' | Matt Sloan | UI Designer &amp; Full-Stack Developer';
-  // });
-
   vm.view = 'thumb';
   vm.toggleView = function(item) {
     if(item !== $scope.view) {

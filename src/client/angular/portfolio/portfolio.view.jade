@@ -7,7 +7,7 @@ h1(data-ng-bind="title")
 div.portfolio.thumb(data-ng-if="main.view == 'thumb'")
   div.mod(data-ng-repeat="item in portfolioList | orderBy: $index: true")
     img(data-ng-src="img/portfolio/{{item.thumb}}.jpg", alt="")
-    a(href="portfolio/{{item.id}}")
+    a(data-ui-sref=".detail({portfolioId: item.id})")
       span {{ item.project }}
       span.btn.primary View Project
 table.portfolio.list(data-ng-if="main.view == 'list'", cellpadding="0", cellspacing="0")
@@ -19,7 +19,7 @@ table.portfolio.list(data-ng-if="main.view == 'list'", cellpadding="0", cellspac
     th Tools
   tr(data-ng-repeat="item in portfolioList | orderBy: $index: true", data-ng-click="openItem(item)")
     td
-      a(href="/portfolio/{{item.id}}") {{ item.project }}
+      a(data-ui-sref=".detail({portfolioId: item.id})") {{ item.project }}
     td.client
       img(alt="{{item.client}}", src="img/clients/client_{{item.client}}.png")
     td.employer

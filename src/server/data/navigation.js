@@ -3,22 +3,22 @@ module.exports = {
     {
       key: 'home',
       label: 'Home',
-      url: '/home'
+      url: 'home'
     },
     {
       key: 'portfolio',
       label: 'Portfolio',
-      url: '/portfolio'
+      url: 'portfolio'
     },
     {
       key: 'experience',
       label: 'Experience',
-      url: '/experience'
+      url: 'experience'
     },
     {
       key: 'contact',
       label: 'Contact',
-      url: '/contact'
+      url: 'contact'
     }  
   ]
 };
