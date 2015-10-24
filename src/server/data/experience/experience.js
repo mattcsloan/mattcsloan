@@ -2,7 +2,7 @@ module.exports = {
   items: [
     {
       company: 'IgnitionOne',
-      title: 'UX Developer',
+      title: 'UX developer',
       timeframe: 'march 2014 - present',
       logo: 'employer-io',
       roles: [
@@ -86,13 +86,13 @@ module.exports = {
   ],
   development: [
     {
-      skill: 'html5',
+      skill: 'html5 / jade',
       comfort: 10,
       uses: 'Web Development (Page Structure)',
       icon: 'html5'
     },
     {
-      skill: 'css3',
+      skill: 'css3 / less / stylus',
       comfort: 10,
       uses: 'Web Page Styling/Presentation',
       icon: 'css3'
@@ -154,7 +154,7 @@ module.exports = {
     {
       skill: 'php',
       comfort: 5,
-      uses: 'Form Handling, Templating (using includes)',
+      uses: 'Form Handling, Templating, Wordpress Websites',
       icon: 'php'
     },
     {
@@ -170,7 +170,7 @@ module.exports = {
       icon: 'joomla'
     },
     {
-      skill: 'git',
+      skill: 'git / github / stash / bitbucket',
       comfort: 10,
       uses: 'Version Control',
       icon: 'git'
@@ -206,12 +206,6 @@ module.exports = {
       comfort: 7,
       uses: ' Photoshop Alternative',
       icon: 'fw'
-    },
-    {
-      skill: 'microsoft office',
-      comfort: 10,
-      uses: 'Spreadsheets, Documents, Presentations',
-      icon: 'office'
     }
   ]
 };

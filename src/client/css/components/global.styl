@@ -55,6 +55,7 @@ img
   border none
 p
   line-height 1.6em
+  margin-top 0
 .clear
   clear both
 .wrapper
@@ -97,6 +98,7 @@ p
     background linear-gradient(#fff, #f5f5f5)
     color #888
     text-decoration none
+    cursor pointer
   &.primary
     background $main-link
     color #fff
@@ -115,6 +117,14 @@ p
       font-size 24px
     &:after
       border-radius 23px
+    &.small
+      border-radius 15px
+      line-height 16px
+      height 16px
+      i
+        font-size 16px
+      &:after
+        border-radius 19px
 .toggle
   a
     background linear-gradient(#eee, #fafafa)
@@ -204,3 +214,31 @@ p
   width 40%
   margin 0 0 30px 0
   
+.workload, .comfort
+  background #ddd
+  background-image -webkit-linear-gradient(top, #cecece, #e6e6e6)
+  background-image -moz-linear-gradient(top, #cecece, #e6e6e6)
+  background-image linear-gradient(top, #cecece, #e6e6e6)
+  border 2px solid #dbdbdb
+  display block
+  height 16px
+  -webkit-border-radius 8px
+  -moz-border-radius 8px
+  border-radius 8px
+  position relative
+  -webkit-box-sizing border-box
+  -moz-box-sizing border-box
+  box-sizing border-box
+  > span
+    background #0078f0
+    background-image -webkit-linear-gradient(top, #0080ff, #0070e0)
+    background-image -moz-linear-gradient(top, #0080ff, #0070e0)
+    background-image linear-gradient(top, #0080ff, #0070e0)
+    position absolute
+    top 0
+    left 0
+    width 92%
+    height 12px
+    -webkit-border-radius 6px
+    -moz-border-radius 6px
+    border-radius 6px

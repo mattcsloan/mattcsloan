@@ -41,9 +41,10 @@ gulp.task('js', function() {
   gulp.src('src/client/libs/**/*.js')
     .pipe(gulp.dest('dist/libs'));
 
-  gulp.src('src/client/scripts/**/*.js')
-    .pipe(concat('custom.min.js'))
-    .pipe(gulp.dest('dist/js'));
+  // gulp custom jquery if used
+  // gulp.src('src/client/scripts/**/*.js')
+  //   .pipe(concat('custom.min.js'))
+  //   .pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('css', function() {
