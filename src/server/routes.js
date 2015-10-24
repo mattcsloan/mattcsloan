@@ -45,12 +45,7 @@ module.exports = function(app) {
 
 
     // frontend routes =========================================================
-    // app.get('/portfolio', function(req, res) {
-    //     res.render('home', function(err, html) {
-    //         res.send(html);
-    //     });
-    // });
-
+    
     // route to handle all angular requests
     app.get('*', function(req, res) {
         res.render('index', function(err, html) {

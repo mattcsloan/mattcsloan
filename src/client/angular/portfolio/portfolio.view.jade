@@ -9,7 +9,7 @@ div.portfolio.thumb(data-ng-if="main.view == 'thumb'")
     img(data-ng-src="img/portfolio/{{item.thumb}}.jpg", alt="")
     a(data-ui-sref=".detail({portfolioId: item.id})")
       span {{ item.project }}
-      span.btn.primary View Project
+      span.btn.secondary View Project
 table.portfolio.list(data-ng-if="main.view == 'list'", cellpadding="0", cellspacing="0")
   tr
     th Project

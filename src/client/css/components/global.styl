@@ -100,14 +100,6 @@ p
     text-decoration none
     cursor pointer
   &.primary
-    background $main-link
-    color #fff
-    border none
-    &:after
-      display none
-    &:hover
-      background $main-link-hover
-      color #fff
   &.btn-icon
     border-radius 19px
     line-height 24px
@@ -117,6 +109,21 @@ p
       font-size 24px
     &:after
       border-radius 23px
+  &.primary
+    padding 6px 32px
+    color #666
+    &:hover
+      color #333
+  &.secondary
+    background $main-link
+    color #fff
+    border none
+    &:after
+      display none
+    &:hover
+      background $main-link-hover
+      color #fff
+  &.btn-icon
     &.small
       border-radius 15px
       line-height 16px
