@@ -1,4 +1,4 @@
-angular.module('MainCtrl', []).controller('MainController', function($scope, $http, Page) {
+angular.module('MainCtrl', []).controller('MainController', function($scope, $state, $http, Page) {
   var vm = this;
 
   $scope.Page = Page;
