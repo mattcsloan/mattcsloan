@@ -1,1 +1,155 @@
-@media all and (max-width : 840px)
+@media all and (max-width : 500px)
+
+  // Global
+  
+  h1
+    padding-bottom 0
+    margin-top 0
+    margin-bottom 12px
+  .header
+    .wrapper
+      padding 0
+      > a
+        float none
+        padding 12px 16px 10px
+        border-bottom 2px solid transparent
+        img
+        &:hover img
+            padding 0
+    .navigation
+      display flex
+      align-items center
+      float none
+      border-top 1px solid $default-border
+      .btn
+        border-radius 0
+        margin 0
+        padding 6px 0
+        width 33.33%
+        box-shadow none
+        background linear-gradient(#fff, #fcfcfc)
+        border none
+        border-right 1px solid $default-border
+        &:after
+          display none
+        &:hover
+        &.active
+          background #fff
+        &:nth-child(3n)
+          border-right-color none
+  .mod
+    margin-bottom 20px
+    padding 16px
+  .main
+  .secondary
+    float none
+    width auto
+    display block 
+    padding 0
+  .main
+    margin-bottom 40px
+  .secondary
+    margin 0 0 16px 0
+  .footer
+    margin 0
+    font-size 12px
+    .wrapper
+      padding 16px
+
+  // Contact Page
+    
+  .social
+    display block
+    &:after
+      content ''
+      display block
+      clear both
+    a
+      float left
+      margin-right 8px
+      &:last-child
+        margin-right 0
+  .workload_content
+    margin-top 30px
+    
+  // Experience Page
+      
+  .experience
+    .btn-icon
+      right 16px
+    h3
+      margin-top 0
+  .skills
+    &:last-child
+      padding-bottom 0
+    li
+      span.tooltip
+        display none
+      &:hover
+        color inherit
+        cursor default
+        span.tooltip
+          display none
+  
+  // Home Page
+    
+  .gallery
+    min-height 0
+    display block
+    position static
+    padding 0
+    .gallery-content
+      padding 16px
+    &.gallery-one
+      .gallery-content
+        margin-top 0
+        padding-top 0
+    .social-profile
+      width 60%
+      float none
+      display block
+      margin 16px auto
+      border-radius 12px
+    .intro
+      float none
+      width auto
+      
+  // Portfolio Pages
+    
+  .portfolio.thumb
+    display block
+    margin-top 16px
+    > div
+      margin 0 0 16px 0
+  .portfolio.list
+    width 100%
+    .tools
+    .employer
+      display none
+    .client
+      padding-right 8px
+    tr
+      padding 6px 0
+      td
+      th
+        color #aaa
+        &:first-child
+        &:last-child
+          padding 16px
+    // &.detail
+    //   margin-bottom 40px
+    //   tr
+    //     td
+    //       img
+    //         opacity 1
+    //       &.tools
+    //         img
+    //           opacity 1
+    //     &:hover
+    //       cursor default
+  .toggle
+    margin-top -3px
+  .detail
+    .mod.hero
+      a
+        right 16px
