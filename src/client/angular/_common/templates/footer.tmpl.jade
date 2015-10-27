@@ -1,11 +1,32 @@
 .footer
   .wrapper
-    p &copy; Matt Sloan
+    .social
+      a(href="http://twitter.com/mattcsloan").btn.btn-icon
+        i.icon.icon-social-twitter
+        span.tooltip Twitter
+      a(href="http://www.linkedin.com/in/mattcsloan").btn.btn-icon
+        i.icon.icon-social-linkedin
+        span.tooltip LinkedIn
+      a(href="http://github.com/mattcsloan/").btn.btn-icon
+        i.icon.icon-social-github
+        span.tooltip GitHub
+      a(href="https://dribbble.com/sloan").btn.btn-icon
+        i.icon.icon-social-dribbble
+        span.tooltip Dribbble
+      a(href="http://www.facebook.com/mattcsloan").btn.btn-icon
+        i.icon.icon-social-facebook
+        span.tooltip Facebook
+      a(href="https://plus.google.com/115025935820609770656/").btn.btn-icon
+        i.icon.icon-social-google-plus
+        span.tooltip Google+
     p 
-      a(data-ui-sref="home") Home 
+      a(data-ui-sref="home", data-ui-sref-active="active") Home 
       | | 
-      a(data-ui-sref="portfolio") Portfolio 
+      a(data-ui-sref="portfolio", data-ui-sref-active="active") Portfolio 
       | | 
-      a(data-ui-sref="experience") Experience 
+      a(data-ui-sref="experience", data-ui-sref-active="active") Experience 
       | | 
-      a(data-ui-sref="contact") Contact
+      a(data-ui-sref="contact", data-ui-sref-active="active") Contact
+    p &copy; 
+      span(data-ng-bind="main.date | date:'yyyy'")
+      |  Matt Sloan and respective clients

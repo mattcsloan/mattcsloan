@@ -6,9 +6,35 @@
   p
     margin 0
     padding 0
+    a
+      color #bbb
+      &:hover
+        color #eee
+      &.active
+        color #fff
+        &:hover
+          text-decoration none
+          cursor default
   .wrapper
-    padding 30px 16px
+    background url('/img/logo_element.png') no-repeat 16px center
+    padding 30px 16px 30px 100px
     &:after
       content ''
       display block
       clear both
+  .social
+    float right
+    width 50%
+    display block
+    text-align right
+    a.btn
+      margin-left 12px
+      background #5f5f5f
+      border-color #595959
+      color #888
+      &:hover
+        background linear-gradient(#fff, #fcfcfc)
+        color #666
+      &:after
+        border-color #5f5f5f
+        box-shadow none

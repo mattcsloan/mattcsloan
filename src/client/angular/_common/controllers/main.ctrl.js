@@ -15,4 +15,6 @@ angular.module('MainCtrl', []).controller('MainController', function($scope, $st
     }
   };
 
+  vm.date = new Date();
+
 });
