@@ -1,7 +1,7 @@
-angular.module('MainCtrl', []).controller('MainController', function($scope, $state, $http, Page) {
+angular.module('MainCtrl', []).controller('MainController', function($state, $http, Page) {
   var vm = this;
 
-  $scope.Page = Page;
+  vm.Page = Page;
 
   $http.get('/api/navigation')
     .success(function (res) {
@@ -10,7 +10,7 @@ angular.module('MainCtrl', []).controller('MainController', function($scope, $st
 
   vm.view = 'thumb';
   vm.toggleView = function(item) {
-    if(item !== $scope.view) {
+    if(item !== vm.view) {
       vm.view = vm.view === 'thumb' ? 'list': 'thumb';
     }
   };

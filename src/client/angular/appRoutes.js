@@ -9,7 +9,8 @@ angular.module('appRoutes', []).config(['$stateProvider', '$locationProvider', '
             views: {
                 content: {
                     templateUrl: '/templates/home/home.view.html',
-                    controller: 'HomeController'
+                    controller: 'HomeController',
+                    controllerAs: 'home'
                 }
             }
         })
@@ -19,7 +20,8 @@ angular.module('appRoutes', []).config(['$stateProvider', '$locationProvider', '
             views: {
                 content: {
                     templateUrl: '/templates/portfolio/portfolio.view.html',
-                    controller: 'PortfolioController'
+                    controller: 'PortfolioController',
+                    controllerAs: 'portfolio'
                 },
                 footer: {
                     templateUrl: '/templates/_common/templates/footer.tmpl.html',
@@ -33,6 +35,7 @@ angular.module('appRoutes', []).config(['$stateProvider', '$locationProvider', '
                     content: {
                         templateUrl: '/templates/portfolio/detail/detail.view.html',
                         controller: 'PortfolioDetailController',
+                        controllerAs: 'detail',
                         resolve: {
                             portfolioId: ['$stateParams', function($stateParams){
                                 console.log($stateParams.portfolioId);
@@ -64,7 +67,8 @@ angular.module('appRoutes', []).config(['$stateProvider', '$locationProvider', '
             views: {
                 content: {
                     templateUrl: '/templates/experience/experience.view.html',
-                    controller: 'ExperienceController'
+                    controller: 'ExperienceController',
+                    controllerAs: 'experience'
                 },
                 footer: {
                     templateUrl: '/templates/_common/templates/footer.tmpl.html',
@@ -77,7 +81,8 @@ angular.module('appRoutes', []).config(['$stateProvider', '$locationProvider', '
             views: {
                 content: {
                     templateUrl: '/templates/contact/contact.view.html',
-                    controller: 'ContactController'
+                    controller: 'ContactController',
+                    controllerAs: 'contact'
                 },
                 footer: {
                     templateUrl: '/templates/_common/templates/footer.tmpl.html',

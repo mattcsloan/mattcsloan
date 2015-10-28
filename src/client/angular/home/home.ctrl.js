@@ -1,5 +1,5 @@
-angular.module('HomeCtrl', []).controller('HomeController', function($scope, Page) {
+angular.module('HomeCtrl', []).controller('HomeController', function(Page) {
 
-  $scope.title = 'Home';
   Page.setTitle('Home');
+  
 });
