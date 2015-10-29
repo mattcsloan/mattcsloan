@@ -3,6 +3,9 @@ div.toggle
     i.icon.icon-thumb
   a(data-ng-click="main.toggleView('list')", data-ng-class="{true: 'active'}[main.view == 'list']")
     i.icon.icon-list
+h6.breadcrumb
+  a(data-ui-sref="home") home
+  span  &raquo; 
 h1(data-ng-bind="portfolio.title")
 div.portfolio.thumb(data-ng-if="main.view == 'thumb'")
   div.mod(data-ng-repeat="item in portfolio.list | orderBy: $index: true")

@@ -1,3 +1,6 @@
+h6.breadcrumb
+  a(data-ui-sref="home") home
+  span  &raquo; 
 h1(data-ng-bind="experience.title")
 .main
   .mod.experience(data-ng-repeat="item in experience.experience.items", data-ng-class="{ 'active': isActive }", data-ng-init="isActive = false"
