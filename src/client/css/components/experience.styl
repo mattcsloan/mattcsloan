@@ -51,7 +51,7 @@
       position absolute
       left -2px
       width 100%
-      box-sizing border-box
+      box-sizing(border-box)
       padding 0 0 16px 0
       white-space normal
       &:after
@@ -61,10 +61,7 @@
         padding 10px 16px
         margin-bottom 10px
         border-bottom 1px solid #eee
-        background -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#fafafa))  /* for webkit browsers */
-        background -moz-linear-gradient(top, #fefefe,  #fafafa)  /* for firefox 3.6+ */
-        background -ms-linear-gradient(top, #fefefe, #fafafa) 
-        background linear-gradient(to bottom, #fefefe, #fafafa)
+        linear-gradient(top, #fefefe, #fafafa)
       p
         padding 0 16px
         display block
@@ -109,5 +106,5 @@
   justify-content space-between
   margin 5px 0 8px 0
   padding 0 16px
-  box-sizing border-box
+  box-sizing(border-box)
   width 100%
