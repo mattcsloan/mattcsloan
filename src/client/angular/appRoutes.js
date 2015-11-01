@@ -32,26 +32,13 @@ angular.module('appRoutes', []).config(['$stateProvider', '$locationProvider', '
             .state('portfolio.detail', {
                 url: '/:portfolioId',
                 views: {
-                    content: {
+                    portfolio: {
                         templateUrl: '/templates/portfolio/detail/detail.view.html',
                         controller: 'PortfolioDetailController',
                         controllerAs: 'detail',
                         resolve: {
                             portfolioId: ['$stateParams', function($stateParams){
-                                console.log($stateParams.portfolioId);
                                 return $stateParams.portfolioId;
-                            // }],
-                            // portfolioDetail: ['$stateParams', function($stateParams){
-                            //   $http.get('/api/portfolio/' + $stateParams.portfolioId)
-                            //     .success(function (res) {
-                            //       return res;
-                            //     });
-                            // }],
-                            // portfolioPreview: ['$stateParams', function($stateParams){
-                            //   $http.get('/api/portfolio/preview/' + $stateParams.portfolioId)
-                            //     .success(function (res) {
-                            //       return res;
-                            //     });
                             }]
                         }
                     },

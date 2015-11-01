@@ -1,6 +1,5 @@
 angular.module('PortfolioDetailCtrl', []).controller('PortfolioDetailController', function($http, Page, portfolioId) {
   var vm = this;
-  console.log('parameter: ' + portfolioId);
   
   $http.get('/api/portfolio/' + portfolioId)
     .success(function (res) {
