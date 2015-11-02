@@ -20,14 +20,24 @@ angular.module('appRoutes', []).config(['$stateProvider', '$locationProvider', '
             views: {
                 content: {
                     templateUrl: '/templates/portfolio/portfolio.view.html',
-                    controller: 'PortfolioController',
-                    controllerAs: 'portfolio'
                 },
                 footer: {
                     templateUrl: '/templates/_common/templates/footer.tmpl.html',
                 }
-            }
+            },
+            redirectTo: 'portfolio.index'
         })
+
+            .state('portfolio.index', {
+                url: '',
+                views: {
+                    portfolio: {
+                        templateUrl: '/templates/portfolio/index/index.view.html',
+                        controller: 'PortfolioController',
+                        controllerAs: 'portfolio'
+                    }
+                }
+            })
 
             .state('portfolio.detail', {
                 url: '/:portfolioId',
@@ -41,9 +51,6 @@ angular.module('appRoutes', []).config(['$stateProvider', '$locationProvider', '
                                 return $stateParams.portfolioId;
                             }]
                         }
-                    },
-                    footer: {
-                        templateUrl: '/templates/_common/templates/footer.tmpl.html',
                     }
                 }
             })
