@@ -4,7 +4,7 @@ angular.module('ExperienceCtrl', []).controller('ExperienceController', function
   vm.title = 'Experience';
   Page.setTitle('Experience');
 
-  $http.get('api/experience')
+  $http.get('/api/experience')
     .success(function (res) {
       vm.experience = res;
     });
