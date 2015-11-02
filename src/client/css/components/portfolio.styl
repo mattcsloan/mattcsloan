@@ -1,0 +1,158 @@
+.portfolio.thumb
+  display flex
+  flex-wrap wrap
+  > div
+    flex 1 0 25%
+    margin 6px
+    padding 4px
+    &:nth-child(3n + 1)
+      margin-left 0
+    &:nth-child(3n)
+      margin-right 0
+    img
+      width 100%
+    a
+      opacity 0
+      position absolute
+      top 0
+      left 0
+      width 100%
+      height 100%
+      background rgba(255,255,255,0.80)
+      color $main-link
+      padding 16px
+      box-sizing(border-box)
+      font-size 24px
+      font-weight 300
+      text-shadow 0 2px 4px rgba(255,255,255,0.6)
+      transition all 0.1s linear
+      .btn
+        position absolute
+        bottom 20px
+        left 16px
+        font-size 16px
+        text-transform uppercase
+      &:hover
+        text-decoration none
+    &:hover
+      a
+        opacity 1
+      img
+        -webkit-filter blur(6px)
+        filter blur(6px)
+.portfolio.list
+  width 100%
+  td
+    padding 0
+    img
+      opacity 0.7
+    &.tools
+      img
+        opacity 0.4
+    a
+      color #555
+  .client
+    img
+      width 60px
+  tr
+    padding 10px 0
+    &:nth-child(even)      
+      td
+        background #fff
+        box-shadow(0 2px 0 #e1e1e1)
+        &:first-child
+          border-radius(4px 0 0 4px)
+        &:last-child
+          border-radius(0 4px 4px 0)
+    &:hover
+      cursor pointer
+      td
+        img
+          opacity 1
+        &.tools
+          img
+            opacity 0.7
+        a
+          color $main-link
+          text-decoration none
+    &:first-child
+      &:hover
+        cursor default
+    td
+    th
+      color #aaa
+      &:first-child
+      &:last-child
+        padding 21px 16px
+        text-align left
+      &:last-child
+        text-align right
+  .tools
+    .tool
+      float right
+    img
+      margin-left 4px
+  .client
+  .employer
+  .type
+    text-align center
+    img
+      margin 0 auto
+  &.detail
+    margin-bottom 40px
+    tr
+      td
+        img
+          opacity 1
+        &.tools
+          img
+            opacity 1
+      &:hover
+        cursor default
+.tooltip
+  position absolute
+  bottom 28px
+  right -10px
+  padding 4px 10px
+  border-radius(4px)
+  box-shadow(0 2px 2px rgba(0,0,0,0.05))
+  border 1px solid #ddd
+  background #fff
+  white-space nowrap
+  z-index 1
+  &:before
+  &:after
+    content ''
+    display block
+    width 0
+    height 0
+    border 7px solid transparent
+    border-top-color #fff
+    position absolute
+    bottom -14px
+    right 13px
+  &:before
+    border-top-color #ddd
+    bottom -15px
+.tool
+  position relative
+  &:after
+    content ''
+    display block
+    clear both
+  .tooltip
+    display none
+  &:hover
+    .tooltip
+      display block
+.toggle
+  float right
+  a
+    float left
+.detail
+  .mod.hero
+    position relative
+    a
+      position absolute
+      right 30px
+      bottom -16px

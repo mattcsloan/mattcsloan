@@ -1,0 +1,35 @@
+div.toggle
+  a(data-ng-click="main.toggleView('thumb')", data-ng-class="{true: 'active'}[main.view == 'thumb']")
+    i.icon.icon-thumb
+  a(data-ng-click="main.toggleView('list')", data-ng-class="{true: 'active'}[main.view == 'list']")
+    i.icon.icon-list
+h6.breadcrumb
+  a(data-ui-sref="home") home
+  span  &raquo; 
+h1(data-ng-bind="portfolio.title")
+div.portfolio.thumb(data-ng-if="main.view == 'thumb'")
+  div.mod(data-ng-repeat="item in portfolio.list | orderBy: $index: true")
+    img(data-ng-src="img/portfolio/{{item.thumb}}.jpg", alt="")
+    a(data-ui-sref="portfolio.detail({portfolioId: item.id})")
+      span(data-ng-bind="item.project")
+      span.btn.btn-secondary View Project
+table.portfolio.list(data-ng-if="main.view == 'list'", cellpadding="0", cellspacing="0")
+  tr
+    th Project
+    th.client Client
+    th.employer Employer
+    th.type Type
+    th.tools Tools
+  tr(data-ng-repeat="item in portfolio.list | orderBy: $index: true", data-ng-click="portfolio.openItem(item)")
+    td
+      a(data-ui-sref="portfolio.detail({portfolioId: item.id})", data-ng-bind="item.project")
+    td.client
+      img(alt="{{item.client}}", src="img/clients/client_{{item.client}}.png")
+    td.employer
+      img(alt="{{item.employer}}", src="img/employer/logo_{{item.employer}}.png")
+    td.type
+      img(alt="{{item.type}}", src="img/icons/icon_device_{{item.type}}.png")
+    td.tools
+      span.tool(data-ng-repeat="tool in item.tools")
+        img(src="/img/icons/icon_{{tool.tool}}.png" alt="{{tool.label}}")
+        span.tooltip(data-ng-bind="tool.label")

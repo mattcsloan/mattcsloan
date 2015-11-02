@@ -1,0 +1,50 @@
+.highlight
+  display block
+  font-size 18px
+  padding 10px 0
+  margin-top 10px
+  background #fcfcfc
+  box-shadow(0 0 2px rgba(0,0,0,0.2))
+  border-bottom 2px solid #0078f0
+  text-align center
+  &:hover
+    text-decoration none
+    background #0078f0
+    color #fff
+.social
+  display flex
+  justify-content space-between
+  a
+    position relative
+    .tooltip
+      display none
+      bottom 40px
+      right auto
+      left 50%
+      margin-left -44px
+      width 66px
+      &:before
+      &:after
+        bottom -14px
+        right auto
+        left 50%
+        margin-left -6px
+      &:before
+        bottom -15px
+    &:hover
+      .tooltip
+        display block
+.workload_content
+  margin-top 50px
+.workload_indicator
+  text-align center
+  color #aaa
+  font-size 14px
+  font-weight 400
+  display inline-block
+  width 100%
+  margin 5px 0
+  span
+    float left
+    &:last-child
+      float right

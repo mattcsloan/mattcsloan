@@ -1,7 +1,7 @@
 module.exports = [
     {
         id: 1,
-        item: {
+        item: [
             {
                 heading: 'Tweeters Website Design',
                 copy: 'A website design that I created for Tweeters Chicken Crib while working at SMK Advertising in Columbus, Ohio. For this project, I was only responsible for the home page design and the flash-based header animation that the client requested. All interior pages and website build was handled by another employee at SMK.',
@@ -9,11 +9,11 @@ module.exports = [
                 link: null,
                 zoom: false
             }
-        }
+        ]
     },
     {
         id: 3,
-        item: {
+        item: [
             {
                 heading: 'Logo and Brand Creation',
                 copy: 'I redesigned the logo for The Ecoplumbers while working at SMK. The logo gave them a look that they could build their entire brand around. The company is built on the idea of living eco-friendly and their logo represents that with the water droplet, leaf, and abstract recycling element.',
@@ -21,11 +21,11 @@ module.exports = [
                 link: null,
                 zoom: false
             }
-        }
+        ]
     },
     {
         id: 4,
-        item: {
+        item: [
             {
                 heading: 'Photographic Creations Website Design and Build',
                 copy: "A look at the home page of Photographic Creations, a large-format printing company in Columbus, Ohio. This site was created to provide a simple web presence for users to get the basic information that they need before contacting Photographic Creations. I worked for Photographic Creations for a couple years creating and maintaining their 2 websites, as well as designing apparel for local schools and businesses.",
@@ -40,11 +40,11 @@ module.exports = [
                 link: null,
                 zoom: false
             }
-        }
+        ]
     },
     {
         id: 5,
-        item: {
+        item: [
             {
                 heading: 'The Shiloh Branding',
                 copy: "When The Shiloh contacted me for a website design, they were using different fonts as their logo and they all looked totally different. My first suggestion was to create their brand and unify their appearance before improving upon their web presence. The tree in the logo is an indicator of The Shiloh's atmosphere. The Shiloh is a banquet and conference center, but it also hosts weddings and is a great place to use as the backdrop for photography and the logo needs to show that. The tree in the logo is very similar to the tree that is by the entrance of the Shiloh.",
@@ -52,11 +52,11 @@ module.exports = [
                 link: null,
                 zoom: false
             }
-        }
+        ]
     },
     {
         id: 6,
-        item: {
+        item: [
             {
                 heading: 'The Shiloh Website Design',
                 copy: 'A website design for a catering and banquet hall located in Fort Wayne, Indiana. Shiloh Hall recently had a change in ownership and decided that a brand refresh and website were things that were needed to take their business to the next level. Unfortunately I was only responsible for the design of this site, and the development and execution of the final product was handled by another agency that tried to fit my custom design into a preexisting template they already had.',
@@ -85,11 +85,11 @@ module.exports = [
                 link: null,
                 zoom: false
             }
-        }
+        ]
     },
     {
         id: 7,
-        item: {
+        item: [
             {
                 heading: 'Brand Concept',
                 copy: "I was able to establish the brand for Medical Business Billing Systems in Columbus. After that, I carried the brand through to their business card design and web presence. Being a reseller of McKesson medical software, the logo needed to be able to appear alongside the McKessen logo quite often. For this reason, the logo needed to have a unique logotype that could stand alone. Once I had modified the font to give MBBS a unique and custom logotype, I created a mark to accompany the type. The mark represents a stack of bills along with a common medical symbol to tie the two together. The logo is dynamic enough that it can stand alone as a logotype, appear with the logo element, or the logo element can appear by itself.",
@@ -97,11 +97,11 @@ module.exports = [
                 link: null,
                 zoom: false
             }
-        }
+        ]
     },
     {
         id: 8,
-        item: {
+        item: [
             {
                 heading: 'Website Home Page Design',
                 copy: "A view of the homepage that I created for Medical Business Billing Systems in Columbus, Ohio. I built this site using php to allow for convenient updating with the header and footer being contained in their own files. The site used a home page slider to direct the user to the most important parts of the website in one click.",
@@ -123,11 +123,11 @@ module.exports = [
                 link: null,
                 zoom: false
             }
-        }
+        ]
     },
     {
         id: 9,
-        item: {
+        item: [
             {
                 heading: 'Monthly Movies On Demand Newsletter Design',
                 copy: 'Email newsletter design for a telecommunications company, Bright House Networks. This email is sent to all their customers informing them of the latest movies and events available on demand.',
@@ -156,11 +156,11 @@ module.exports = [
                 link: null,
                 zoom: false
             }
-        }
+        ]
     },
     {
         id: 10,
-        item: {
+        item: [
             {
                 heading: 'Crocs Image Gallery Build',
                 copy: "These Crocs sites were created to showcase a deal of the day. While these were designed by another designer at Knotice, I was in charge of building out the sites. The main feature that I added to these sites was a jQuery enabled mobile gallery. I set it up so that an employee at Crocs is now able to copy over an existing product microsite, change the copy using Knotice's content management system and upload all the photos for the gallery and it will all automatically resize the images and maintain the proper format for the image gallery.",
@@ -168,11 +168,11 @@ module.exports = [
                 link: null,
                 zoom: false
             }
-        }
+        ]
     },
     {
         id: 12,
-        item: {
+        item: [
             {
                 heading: 'Landing Page and Signup Form',
                 copy: "This was a mobile landing page that was targeted at readers of Fortune Magazine. MARS had an advertisement in the January issue that featured a QR code. When the user scanned the QR code they landed on this page. If the user chose to begin a free trial to have MARS Drinks brewers set up in their office, they were directed to a page where they could fill out the proper form to start the trial.",
@@ -180,11 +180,11 @@ module.exports = [
                 link: null,
                 zoom: false
             }
-        }
+        ]
     },
     {
         id: 13,
-        item: {
+        item: [
             {
                 heading: 'Catwalk Product Collection Microsite Design',
                 copy: "A look at the overall design of a mobile site created for Tigi and their Catwalk collection. This mobile site is intended for hairdressers and allows them to look at image galleries that show ways they can style their clients' hair based on their hair types. It also provides information on ways to get the best result out of their products and also sign up to receive coupons for the next time they need to refill their product.",
@@ -199,20 +199,18 @@ module.exports = [
                 link: null,
                 zoom: false
             }
-        }
+        ]
     },
     {
         id: 14,
-        item: {
+        item: [
             {
                 heading: 'Accessibility Standards Home Page Design and Build',
                 copy: 'While working for Knotice, I was the lead designer on the Diebold account and created numerous websites, landing pages, and emails for them. I created multiple websites with a similar look and feel to this one. This website details all the information that was released based on the new accessibility standards being set.',
                 image: 'diebold_01',
                 link: null,
                 zoom: false
-            }
-        },
-        item: {
+            },
             {
                 heading: 'Interior Page on Diebold Opteva Microsite',
                 copy: "This microsite informed the user (bank owners, managers, etc.) of Diebold's latest ATM, as well as how it helps prevent attacks and how it meets the latest accessibility requirements.",
@@ -220,11 +218,11 @@ module.exports = [
                 link: null,
                 zoom: false
             }
-        }
+        ]
     },
     {
         id: 15,
-        item: {
+        item: [
             {
                 heading: 'Cub Cadet Lawn Mower Microsites',
                 copy: "A look at the home and parts list pages of a Cub Cadet mobile site. This site is accessed by customers inside Home Depot when they scan the QR code next to the specific lawn tractor on display. A QR Code is also engraved on the lawn tractor's keychain so owners can get the information they need about their newest purchase.",
@@ -246,11 +244,11 @@ module.exports = [
                 link: null,
                 zoom: false
             }
-        }
+        ]
     },
     {
         id: 16,
-        item: {
+        item: [
             {
                 heading: 'Landing Page Design and Build',
                 copy: 'One of many mobile landing pages created for Charter communications. Charter has mobile advertisement banners and texting campaigns that advertise offers new prospective customers. When the user clicks on the mobile banners or a link in a text, they are directed to these mobile offer pages.',
@@ -265,11 +263,11 @@ module.exports = [
                 link: 'http://connect.charter.com/cas/Portal/content/MobileLP/2012Q2/9997FreeDVR.aspx',
                 zoom: false
             }
-        }
+        ]
     },
     {
         id: 17,
-        item: {
+        item: [
             {
                 heading: 'Invacare DS Bed Mobile Microsite',
                 copy: "A microsite featuring Invacare's latest home care bed. This mobile microsite displays the product, as well as detailing its features and offering the user how-to videos and documentation.",
@@ -284,11 +282,11 @@ module.exports = [
                 link: null,
                 zoom: false
             }
-        }
+        ]
     },
     {
         id: 19,
-        item: {
+        item: [
             {
                 heading: 'Home Page Mobile Design',
                 copy: "A proposed mobile design for Bayer Pharmaceuticals. This microsite is intended for use by pharmacists. Most pharmacists do not have full access to the internet while at work, so a mobile microsite gives pharmacists the opportunity to learn more about these bayer products from their mobile device without having to use their workplace's restricted internet.",
@@ -303,10 +301,11 @@ module.exports = [
                 link: null,
                 zoom: false
             }
-        }
+        ]
     },
+    {
         id: 20,
-        item: {
+        item: [
             {
                 heading: 'WestJet Mobile Design',
                 copy: 'A look at a concept proposal that we pitched to WestJet while working at Knotice. This design gives WestJet a mobile web presence that matches their existing web identity. I had designed the entire user experience where the user could browse flights, book a flight, choose their seat, get weather information, and use their phone as their boarding pass.',
@@ -342,23 +341,23 @@ module.exports = [
                 link: null,
                 zoom: false
             }
-        }
+        ]
     },
     {
         id: 21,
-        item: {
+        item: [
             {
                 heading: 'Website Home Page',
                 copy: 'I designed and built 3 different video guide micro sites for Comcast/XFINITY while working at Knotice. These micro sites provide a resource for the user to learn more about the new video guides and DVR software that their Comcast cable boxes use.',
                 image: 'xfinity_video_01',
-                link: 'http://xfinity.com/onscreenguide2/',
+                link: null,
                 zoom: false
             },
             {
                 heading: 'Interior Page',
                 copy: 'A view at one of the interior pages. The side navigation helps inform the user of where they are located by highlighting the current page in red and showing each section on the page below. When the user clicks one of the section links, the page will scroll into place using javascript.',
                 image: 'xfinity_video_02',
-                link: 'http://info.xfinity.com/Portal/content/Comcast/VideoMicrosites/onscreenguide2/hd.aspx',
+                link: null,
                 zoom: false
             },
             {
@@ -368,11 +367,11 @@ module.exports = [
                 link: null,
                 zoom: false
             }
-        }
+        ]
     },
     {
         id: 22,
-        item: {
+        item: [
             {
                 heading: 'Compare Charter Internet Speeds',
                 copy: 'I designed and built this mobile experience for Charter while working at Knotice. The mobile page uses jquery to show the length of time it would take to download a 500mb game with Charter internet compared to a user with DSL. It also shows the user the difference in downloading speeds when downloading or uploading movies, music, and photos.',
@@ -387,6 +386,6 @@ module.exports = [
                 link: null,
                 zoom: false
             }
-        }
+        ]
     }
 ];

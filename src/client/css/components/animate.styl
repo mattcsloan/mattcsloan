@@ -1,34 +1,79 @@
-@-webkit-keyframes fadeOut
-  from 
-    opacity 1
-  to
-    opacity 0
-@keyframes fadeOut
-  from 
-    opacity 1
-  to
-    opacity 0
+// @-webkit-keyframes fadeOut
+//   from 
+//     opacity 1
+//   to
+//     opacity 0
+// @keyframes fadeOut
+//   from 
+//     opacity 1
+//   to
+//     opacity 0
 
-@-webkit-keyframes fadeIn
-  from 
-    opacity 0
-  to
-    opacity 1
-@keyframes fadeIn
-  from 
-    opacity 0
-  to
-    opacity 1
+// @-webkit-keyframes fadeIn
+//   from 
+//     opacity 0
+//   to
+//     opacity 1
+// @keyframes fadeIn
+//   from 
+//     opacity 0
+//   to
+//     opacity 1
 
-.ng-enter
-  -webkit-animation fadeIn 0.1s both ease-in-out
-  animation fadeIn 0.1s both ease-in-out
-  z-index 8888
+// .ng-enter
+//   -webkit-animation fadeIn 0.1s both ease-in-out
+//   animation fadeIn 0.1s both ease-in-out
+//   z-index 8888
+//   position absolute
+//   width 100%
+// .ng-leave
+//   -webkit-animation fadeOut 0.2s both ease-in-out
+//   animation fadeOut 0.2s both ease-in-out
+//   z-index 9999
+//   position absolute
+//   width 100%
+
+// .content .wrapper
+//   position relative
+// .home .content .wrapper
+//   position static
+    
+[data-ui-view="footer"].ng-enter, [data-ui-view="footer"].ng-leave {
   position absolute
-  width 100%
-.ng-leave
-  -webkit-animation fadeOut 0.2s both ease-in-out
-  animation fadeOut 0.2s both ease-in-out
-  z-index 9999
-  position absolute
-  width 100%
+  top 16px
+  left 16px
+  right 16px
+  -webkit-transition:all 0.2s ease-in-out;
+  transition:all 0.2s ease-in-out;
+}
+
+[data-ui-view="footer"].ng-enter-stagger, [data-ui-view="footer"].ng-leave-stagger, [data-ui-view="footer"].ng-move-stagger {
+  /* 200ms will be applied between each sucessive enter operation */ 
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+
+  /* this is here to avoid accidental CSS inheritance */
+  -webkit-transition-duration: 0;
+  transition-duration: 0;
+}
+
+[data-ui-view="footer"].ng-enter {
+  position relative
+  opacity: 0;
+}
+
+[data-ui-view="footer"].ng-enter-active {
+  opacity: 1;
+}
+
+[data-ui-view="footer"].ng-leave {
+  opacity: 1;
+}
+
+[data-ui-view="footer"].ng-leave-active {
+  opacity: 0;
+}
+
+[data-ui-view="footer"].ng-enter .footer, [data-ui-view="footer"].ng-leave .footer {
+  display: none;
+}

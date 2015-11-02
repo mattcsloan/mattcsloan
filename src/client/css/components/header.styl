@@ -1,29 +1,27 @@
 .header
   background #fff
   border-bottom 1px solid #e3e3e3
-  img
-    height 24px
-    padding 16px 0
   .wrapper
     padding 0 16px
+    > a
+      display block
+      float left
+      img
+        height 24px
+        padding 24px 0
+      &:hover
+        border-bottom 2px solid $main-link
+        img
+          padding-bottom 22px
+          opacity 0.8
 .navigation
-  margin 0
-  padding 0
   float right
   &:after
     content ''
     display block
     clear both
-  li
-    list-style none
-    margin 0
-    padding 0
-    float left
-    display block
-    a
-      padding 16px
-      display block
-      line-height 24px
-      &:hover
-        text-decoration none
-        background #fafafa
+  .btn
+    margin 19px 12px 21px 12px
+    padding-top 3px
+    padding-bottom 3px
+    width 80px

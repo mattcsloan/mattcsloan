@@ -4,7 +4,7 @@ var jade = require('gulp-jade');
 var stylus = require('gulp-stylus');
 var rename = require('gulp-rename');
 
-gulp.task('default', ['templates', 'img', 'js', 'css'], function() {
+gulp.task('default', ['templates', 'img', 'fonts', 'js', 'css'], function() {
   // place code for your default task here
   console.log('gulp process completed');
 });
@@ -21,11 +21,15 @@ gulp.task('templates', function() {
 });
 
 gulp.task('img', function() {
-  // convert jade files to html
-  var YOUR_LOCALS = {};
+  // copy img files/directories over to dist directory
+  gulp.src('src/client/img/**/*.*')
+    .pipe(gulp.dest('dist/img'));
+});
 
-  gulp.src('src/client/img/*.*')
-    .pipe(gulp.dest('dist/img'))
+gulp.task('fonts', function() {
+  // copy font files/directories over to dist directory
+  gulp.src('src/client/fonts/**/*.*')
+    .pipe(gulp.dest('dist/fonts'));
 });
 
 gulp.task('js', function() {
@@ -36,6 +40,11 @@ gulp.task('js', function() {
 
   gulp.src('src/client/libs/**/*.js')
     .pipe(gulp.dest('dist/libs'));
+
+  // gulp custom jquery if used
+  // gulp.src('src/client/scripts/**/*.js')
+  //   .pipe(concat('custom.min.js'))
+  //   .pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('css', function() {

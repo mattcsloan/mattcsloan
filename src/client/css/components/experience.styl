@@ -1,0 +1,110 @@
+.experience
+  position relative
+  overflow visible
+  min-height 66px
+  .experience-details
+    transition all 0.1s linear 
+    display none
+  .btn-icon
+    position absolute
+    right 30px
+    bottom -16px
+  &.active
+    .experience-details
+      display block
+  &:hover
+    background #f4f4f4
+    cursor pointer
+    &:before
+      background #fcfcfc
+.experience
+.education
+  .exp-logo
+    float right
+    opacity 0.7
+    width 66px
+    font-size 66px
+    min-height 66px
+    display flex
+    align-items center
+    justify-content center
+.education
+  h3
+    margin 0
+    padding 0
+  i
+    margin-top 4px
+
+.skills
+  margin 0
+  padding 0 0 40px 0
+  li
+    margin 0 0 15px 0
+    list-style none
+    color #555
+    position relative
+    i
+      float left
+      margin 0 9px 0 0
+    span.tooltip
+      display none
+      position absolute
+      left -2px
+      width 100%
+      box-sizing(border-box)
+      padding 0 0 16px 0
+      white-space normal
+      &:after
+        right auto
+        left 6px
+      h4
+        padding 10px 16px
+        margin-bottom 10px
+        border-bottom 1px solid #eee
+        background-linear-gradient(top, #fefefe, #fafafa)
+      p
+        padding 0 16px
+        display block
+        font-size 13px
+        &:last-child
+          margin 0
+        .comfort
+          margin-bottom 10px
+    &:hover
+      color #333
+      cursor pointer
+      span.tooltip
+        display block
+.comfort
+  margin 20px 16px 0
+  &.comfort-1 span
+    width 10%
+  &.comfort-2 span
+    width 20%
+  &.comfort-3 span
+    width 30%
+  &.comfort-4 span
+    width 40%
+  &.comfort-5 span
+    width 50%
+  &.comfort-6 span
+    width 60%
+  &.comfort-7 span
+    width 70%
+  &.comfort-8 span
+    width 80%
+  &.comfort-9 span
+    width 90%
+  &.comfort-10 span
+    width 100%
+.indicator
+  text-align center
+  color #aaa
+  font-size 14px
+  font-weight 400
+  display flex
+  justify-content space-between
+  margin 5px 0 8px 0
+  padding 0 16px
+  box-sizing(border-box)
+  width 100%

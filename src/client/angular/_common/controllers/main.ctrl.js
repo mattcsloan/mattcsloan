@@ -1,15 +1,30 @@
-angular.module('MainCtrl', []).controller('MainController', function($scope, $http) {
+angular.module('MainCtrl', []).controller('MainController', function($state, $rootScope, $http, Page) {
+  var vm = this;
 
-  $scope.tagline = 'main';  
+  vm.Page = Page;
 
-  $http.get('api/navigation')
+  $http.get('/api/navigation')
     .success(function (res) {
-      $scope.navigation = res
+      vm.navigation = res;
     });
 
-  $scope.$on('$routeChangeSuccess', function (event, data) {
-    $scope.errormessage = '';
-    $scope.pageTitle = data.title + ' | Matt Sloan | UI Designer &amp; Full-Stack Developer';
+  vm.view = 'thumb';
+  vm.toggleView = function(item) {
+    if(item !== vm.view) {
+      vm.view = vm.view === 'thumb' ? 'list': 'thumb';
+    }
+  };
+
+  vm.state = $state;
+
+  vm.date = new Date();
+
+
+  $rootScope.$on('$stateChangeStart', function(evt, to, params) {
+    if (to.redirectTo) {
+      evt.preventDefault();
+      $state.go(to.redirectTo, params)
+    }
   });
 
 });

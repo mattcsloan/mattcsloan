@@ -1,14 +1,15 @@
-angular.module('PortfolioCtrl', []).controller('PortfolioController', function($scope, $http) {
+angular.module('PortfolioCtrl', []).controller('PortfolioController', function($http, Page, $location) {
+  var vm = this;
 
-  $scope.title = 'Portfolio';  
+  Page.setTitle('Portfolio');
+  vm.title = 'Portfolio';
 
-  $http.get('api/portfolio')
+  $http.get('/api/portfolio')
     .success(function (res) {
-      $scope.portfolioList = res;
+      vm.list = res;
     });
 
-  $scope.$on('$routeChangeSuccess', function (event, data) {
-    $scope.errormessage = '';
-    $scope.pageTitle = data.title + ' | Matt Sloan | UI Designer &amp; Full-Stack Developer';
-  });
+  vm.openItem = function(item) {
+    $location.path('portfolio/' + item.id);
+  };
 });
