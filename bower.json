@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "dependencies": {
     "angular": "latest",
-    "angular-route": "latest",
     "angular-resource": "~1.4.7",
     "angular-animate": "~1.4.7",
-    "jquery": "~1.7.1"
+    "angular-ui-router": "ui-router#~0.2.15"
   }
 }

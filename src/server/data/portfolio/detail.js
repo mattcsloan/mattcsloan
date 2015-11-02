@@ -350,14 +350,14 @@ module.exports = [
                 heading: 'Website Home Page',
                 copy: 'I designed and built 3 different video guide micro sites for Comcast/XFINITY while working at Knotice. These micro sites provide a resource for the user to learn more about the new video guides and DVR software that their Comcast cable boxes use.',
                 image: 'xfinity_video_01',
-                link: 'http://xfinity.com/onscreenguide2/',
+                link: null,
                 zoom: false
             },
             {
                 heading: 'Interior Page',
                 copy: 'A view at one of the interior pages. The side navigation helps inform the user of where they are located by highlighting the current page in red and showing each section on the page below. When the user clicks one of the section links, the page will scroll into place using javascript.',
                 image: 'xfinity_video_02',
-                link: 'http://info.xfinity.com/Portal/content/Comcast/VideoMicrosites/onscreenguide2/hd.aspx',
+                link: null,
                 zoom: false
             },
             {

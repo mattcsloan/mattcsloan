@@ -1,14 +1,15 @@
-angular.module('PortfolioCtrl', []).controller('PortfolioController', function($scope, $http, Page, $location) {
+angular.module('PortfolioCtrl', []).controller('PortfolioController', function($http, Page, $location) {
+  var vm = this;
 
   Page.setTitle('Portfolio');
-  $scope.title = 'Portfolio';
+  vm.title = 'Portfolio';
 
-  $http.get('api/portfolio')
+  $http.get('/api/portfolio')
     .success(function (res) {
-      $scope.portfolioList = res;
+      vm.list = res;
     });
 
-  $scope.openItem = function(item) {
+  vm.openItem = function(item) {
     $location.path('portfolio/' + item.id);
   };
 });

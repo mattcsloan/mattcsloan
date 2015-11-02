@@ -1,6 +1,7 @@
-angular.module('ContactCtrl', []).controller('ContactController', function($scope, Page) {
+angular.module('ContactCtrl', []).controller('ContactController', function(Page) {
+  var vm = this;
 
-  $scope.title = 'Contact Me';
+  vm.title = 'Contact Me';
   Page.setTitle('Contact Me');
 
 });

@@ -1,5 +1,5 @@
 angular.module('sloanApp', [
-    'ngRoute', 
+    'ui.router',
     'ngAnimate', 
     'appRoutes', 
     'app.factories', 

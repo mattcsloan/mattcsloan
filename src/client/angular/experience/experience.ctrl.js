@@ -1,11 +1,12 @@
-angular.module('ExperienceCtrl', []).controller('ExperienceController', function($scope, $http, Page) {
-
-  $scope.title = 'Experience';
+angular.module('ExperienceCtrl', []).controller('ExperienceController', function($http, Page) {
+  var vm = this;
+  
+  vm.title = 'Experience';
   Page.setTitle('Experience');
 
-  $http.get('api/experience')
+  $http.get('/api/experience')
     .success(function (res) {
-      $scope.experience = res;
+      vm.experience = res;
     });
 
 });

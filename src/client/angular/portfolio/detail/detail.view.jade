@@ -1,3 +1,9 @@
+h6.breadcrumb
+  a(data-ui-sref="home") home
+  span  &raquo; 
+  a(data-ui-sref="portfolio") portfolio
+  span  &raquo; 
+h1(data-ng-bind="detail.portfolioPreview.project")
 table.portfolio.list.detail(cellpadding="0", cellspacing="0")
   tr
     th Project
@@ -6,23 +12,23 @@ table.portfolio.list.detail(cellpadding="0", cellspacing="0")
     th Type
     th Tools
   tr
-    td {{ portfolioPreview.project }}
+    td(data-ng-bind="detail.portfolioPreview.project")
     td.client
-      img(alt="{{portfolioPreview.client}}", src="/img/clients/client_{{portfolioPreview.client}}.png")
+      img(alt="{{detail.portfolioPreview.client}}", src="/img/clients/client_{{detail.portfolioPreview.client}}.png")
     td.employer
-      img(alt="{{portfolioPreview.employer}}", src="/img/employer/logo_{{portfolioPreview.employer}}.png")
+      img(alt="{{detail.portfolioPreview.employer}}", src="/img/employer/logo_{{detail.portfolioPreview.employer}}.png")
     td.type
-      img(alt="{{portfolioPreview.type}}", src="/img/icons/icon_device_{{portfolioPreview.type}}.png")
+      img(alt="{{detail.portfolioPreview.type}}", src="/img/icons/icon_device_{{detail.portfolioPreview.type}}.png")
     td.tools
-      span.tool(data-ng-repeat="tool in portfolioPreview.tools")
+      span.tool(data-ng-repeat="tool in detail.portfolioPreview.tools")
         img(src="/img/icons/icon_{{tool.tool}}.png" alt="{{tool.label}}")
-        span.tooltip {{tool.label}}
-.detail.clear(data-ng-repeat="item in portfolioDetail")
+        span.tooltip(data-ng-bind="tool.label")
+.detail.clear(data-ng-repeat="item in detail.portfolioDetail")
   .main
     .mod.hero
       img(data-ng-src="/img/portfolio/{{item.image}}.jpg", alt="{{item.heading}}")
-      a.btn.btn-icon(data-ng-if="item.link", data-ng-href="{{item.link}}", target="_blank") 
+      a.btn.btn-icon(data-ng-if="item.link", href="{{item.link}}", target="_blank") 
         i.icon.icon-link
   .secondary
-    h2 {{item.heading}}
-    p {{item.copy}}      
+    h2(data-ng-bind="item.heading")
+    p(data-ng-bind="item.copy")

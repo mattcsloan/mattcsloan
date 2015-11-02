@@ -1,40 +1,92 @@
-angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+angular.module('appRoutes', []).config(['$stateProvider', '$locationProvider', '$urlRouterProvider', function($stateProvider, $locationProvider, $urlRouterProvider) {
 
-    $routeProvider
+    $urlRouterProvider.otherwise("/");
 
-        .when('/', {
-            templateUrl: '/templates/home/home.view.html',
-            controller: 'HomeController'
+    $stateProvider
+
+        .state('home', {
+            url: '/',
+            views: {
+                content: {
+                    templateUrl: '/templates/home/home.view.html',
+                    controller: 'HomeController',
+                    controllerAs: 'home'
+                }
+            }
         })
 
-        .when('/home', {
-            redirectTo: '/'
+        .state('portfolio', {
+            url: '/portfolio',
+            views: {
+                content: {
+                    templateUrl: '/templates/portfolio/portfolio.view.html',
+                },
+                footer: {
+                    templateUrl: '/templates/_common/templates/footer.tmpl.html',
+                }
+            },
+            redirectTo: 'portfolio.index'
         })
 
-        .when('/portfolio/:id', {
-            templateUrl: '/templates/portfolio/detail/detail.view.html',
-            controller: 'PortfolioDetailController'
+            .state('portfolio.index', {
+                url: '',
+                views: {
+                    portfolio: {
+                        templateUrl: '/templates/portfolio/index/index.view.html',
+                        controller: 'PortfolioController',
+                        controllerAs: 'portfolio'
+                    }
+                }
+            })
+
+            .state('portfolio.detail', {
+                url: '/:portfolioId',
+                views: {
+                    portfolio: {
+                        templateUrl: '/templates/portfolio/detail/detail.view.html',
+                        controller: 'PortfolioDetailController',
+                        controllerAs: 'detail',
+                        resolve: {
+                            portfolioId: ['$stateParams', '$state', function($stateParams, $state){
+                                if(!$stateParams.portfolioId) {
+                                    $state.go('portfolio');
+                                }  else {
+                                    return $stateParams.portfolioId;
+                                }                               
+                            }]
+                        }
+                    }
+                }
+            })
+
+
+        .state('experience', {
+            url: '/experience',
+            views: {
+                content: {
+                    templateUrl: '/templates/experience/experience.view.html',
+                    controller: 'ExperienceController',
+                    controllerAs: 'experience'
+                },
+                footer: {
+                    templateUrl: '/templates/_common/templates/footer.tmpl.html',
+                }
+            }
         })
 
-        .when('/portfolio', {
-            templateUrl: '/templates/portfolio/portfolio.view.html',
-            controller: 'PortfolioController'
-        })
-
-        .when('/experience', {
-            templateUrl: '/templates/experience/experience.view.html',
-            controller: 'ExperienceController'
-        })
-
-        .when('/contact', {
-            templateUrl: '/templates/contact/contact.view.html',
-            controller: 'ContactController'
+        .state('contact', {
+            url: '/contact',
+            views: {
+                content: {
+                    templateUrl: '/templates/contact/contact.view.html',
+                    controller: 'ContactController',
+                    controllerAs: 'contact'
+                },
+                footer: {
+                    templateUrl: '/templates/_common/templates/footer.tmpl.html',
+                }
+            }
         });
-
-        // .otherwise({
-        //     templateUrl:'errors/404.view.jade'
-        // });
-
 
     $locationProvider.html5Mode({
         enabled: true,
