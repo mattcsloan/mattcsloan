@@ -1,78 +1,79 @@
-h6.breadcrumb
-  a(data-ui-sref="home") home
-  span  &raquo; 
-h1(data-ng-bind="experience.title")
-.main
-  .mod.experience(data-ng-repeat="item in experience.experience.items", data-ng-class="{ 'active': isActive }", data-ng-init="isActive = false"
-       data-ng-click="isActive = !isActive")
-    i.exp-logo.icon(data-ng-if="item.logo.indexOf('employer') > -1", data-ng-class="'icon-{{item.logo}}'")
-    span.exp-logo(data-ng-if="item.logo.indexOf('employer') == -1")
-      img(src="img/employer/logo_{{item.logo}}.png", alt="{{item.company}}")
-    h3(data-ng-bind="item.company")
-    h4
-      em(data-ng-bind="item.title")
-      | , 
-      span(data-ng-bind="item.timeframe")
-    ul.experience-details
-      li(data-ng-repeat="detail in item.roles", data-ng-bind="detail")
-    a.btn.btn-icon.small
-      i.icon(data-ng-class="{ 'icon-arrow-up': isActive , 'icon-arrow-down': !isActive }")
-  h2 Education
-  .mod.education(data-ng-repeat="item in experience.experience.education")
-    i.icon.exp-logo(data-ng-class="'icon-{{item.logo}}'")
-    h3(data-ng-bind="item.school")
-    h4
-      em(data-ng-bind="item.degree")
-      | , 
-      span(data-ng-bind="item.timeframe")
-    h4(data-ng-bind="item.major")
-    h4(data-ng-bind="item.minor")
-.secondary       
-  h2 Development Skills
-  ul.skills
-    li(data-ng-repeat="item in experience.experience.development")
-      i.icon(data-ng-class="'icon-{{item.icon}}'")
-      span(data-ng-bind="item.skill")
-      span.tooltip
-        h4(data-ng-bind="item.skill")
-        span.comfort(data-ng-class="'comfort-{{item.comfort}}'")
-          span
-        .indicator
-          span 0
-          span |
-          span 2
-          span |
-          span 4
-          span |
-          span 6
-          span |
-          span 8
-          span |
-          span 10
-        p
-          strong Uses: 
-          span(data-ng-bind="item.uses")
-  h2 Design Skills
-  ul.skills
-    li(data-ng-repeat="item in experience.experience.design")
-      i.icon(data-ng-class="'icon-{{item.icon}}'")
-      span(data-ng-bind="item.skill")
-      span.tooltip
-        h4(data-ng-bind="item.skill")
-        span.comfort(data-ng-class="'comfort-{{item.comfort}}'")
-          span
-        .indicator
-          span 0
-          span |
-          span 2
-          span |
-          span 4
-          span |
-          span 6
-          span |
-          span 8
-          span |
-          span 10
-        p
-          strong Uses: 
-          span(data-ng-bind="item.uses")
+.experience-state
+  h6.breadcrumb
+    a(data-ui-sref="home") home
+    span  &raquo; 
+  h1(data-ng-bind="experience.title")
+  .main
+    .mod.experience(data-ng-repeat="item in experience.experience.items", data-ng-class="{ 'active': isActive }", data-ng-init="isActive = false"
+         data-ng-click="isActive = !isActive")
+      i.exp-logo.icon(data-ng-if="item.logo.indexOf('employer') > -1", data-ng-class="'icon-{{item.logo}}'")
+      span.exp-logo(data-ng-if="item.logo.indexOf('employer') == -1")
+        img(src="img/employer/logo_{{item.logo}}.png", alt="{{item.company}}")
+      h3(data-ng-bind="item.company")
+      h4
+        em(data-ng-bind="item.title")
+        | , 
+        span(data-ng-bind="item.timeframe")
+      ul.experience-details
+        li(data-ng-repeat="detail in item.roles", data-ng-bind="detail")
+      a.btn.btn-icon.small
+        i.icon(data-ng-class="{ 'icon-arrow-up': isActive , 'icon-arrow-down': !isActive }")
+    h2 Education
+    .mod.education(data-ng-repeat="item in experience.experience.education")
+      i.icon.exp-logo(data-ng-class="'icon-{{item.logo}}'")
+      h3(data-ng-bind="item.school")
+      h4
+        em(data-ng-bind="item.degree")
+        | , 
+        span(data-ng-bind="item.timeframe")
+      h4(data-ng-bind="item.major")
+      h4(data-ng-bind="item.minor")
+  .secondary       
+    h2 Development Skills
+    ul.skills
+      li(data-ng-repeat="item in experience.experience.development")
+        i.icon(data-ng-class="'icon-{{item.icon}}'")
+        span(data-ng-bind="item.skill")
+        span.tooltip
+          h4(data-ng-bind="item.skill")
+          span.comfort(data-ng-class="'comfort-{{item.comfort}}'")
+            span
+          .indicator
+            span 0
+            span |
+            span 2
+            span |
+            span 4
+            span |
+            span 6
+            span |
+            span 8
+            span |
+            span 10
+          p
+            strong Uses: 
+            span(data-ng-bind="item.uses")
+    h2 Design Skills
+    ul.skills
+      li(data-ng-repeat="item in experience.experience.design")
+        i.icon(data-ng-class="'icon-{{item.icon}}'")
+        span(data-ng-bind="item.skill")
+        span.tooltip
+          h4(data-ng-bind="item.skill")
+          span.comfort(data-ng-class="'comfort-{{item.comfort}}'")
+            span
+          .indicator
+            span 0
+            span |
+            span 2
+            span |
+            span 4
+            span |
+            span 6
+            span |
+            span 8
+            span |
+            span 10
+          p
+            strong Uses: 
+            span(data-ng-bind="item.uses")
