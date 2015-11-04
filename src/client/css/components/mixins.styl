@@ -28,7 +28,11 @@ border-radius()
   vendor('border-radius', arguments)
   
 display-flex()
-  vendor('display', arguments)
+  display -webkit-box
+  display -moz-box
+  display -ms-flexbox
+  display -webkit-flex
+  display flex
 
 flex()
   vendor('flex', arguments)
