@@ -1,6 +1,9 @@
 {
   "name": "mattcsloan",
   "main": "server.js",
+  "engines": {
+    "node": "0.12.7"
+  },
   "scripts": {
     "start": "gulp && node server.js",
     "build": "gulp",
@@ -8,6 +11,7 @@
   },
   "dependencies": {
     "body-parser": "~1.4.2",
+    "bower": "^1.6.5",
     "express": "~4.5.1",
     "jade": "^1.9.2",
     "method-override": "~2.0.2",
