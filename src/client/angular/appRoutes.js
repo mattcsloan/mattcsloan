@@ -7,6 +7,9 @@ angular.module('appRoutes', []).config(['$stateProvider', '$locationProvider', '
         .state('home', {
             url: '/',
             views: {
+                header: {
+                    templateUrl: '/templates/_common/templates/header.tmpl.html',
+                },
                 content: {
                     templateUrl: '/templates/home/home.view.html',
                     controller: 'HomeController',
@@ -18,6 +21,9 @@ angular.module('appRoutes', []).config(['$stateProvider', '$locationProvider', '
         .state('portfolio', {
             url: '/portfolio',
             views: {
+                header: {
+                    templateUrl: '/templates/_common/templates/header.tmpl.html',
+                },
                 content: {
                     templateUrl: '/templates/portfolio/portfolio.view.html',
                 },
@@ -63,6 +69,9 @@ angular.module('appRoutes', []).config(['$stateProvider', '$locationProvider', '
         .state('experience', {
             url: '/experience',
             views: {
+                header: {
+                    templateUrl: '/templates/_common/templates/header.tmpl.html',
+                },
                 content: {
                     templateUrl: '/templates/experience/experience.view.html',
                     controller: 'ExperienceController',
@@ -77,6 +86,9 @@ angular.module('appRoutes', []).config(['$stateProvider', '$locationProvider', '
         .state('contact', {
             url: '/contact',
             views: {
+                header: {
+                    templateUrl: '/templates/_common/templates/header.tmpl.html',
+                },
                 content: {
                     templateUrl: '/templates/contact/contact.view.html',
                     controller: 'ContactController',
