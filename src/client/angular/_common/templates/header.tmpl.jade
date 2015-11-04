@@ -1,0 +1,5 @@
+.wrapper
+  a(data-ui-sref="home")
+    img(src="/img/logo.png", alt="Matt Sloan")
+  .navigation
+    a.btn.btn-primary(data-ng-repeat="item in main.navigation", data-ui-sref="{{item.url}}", data-ng-bind="item.key", data-ui-sref-active="active") 

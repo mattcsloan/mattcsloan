@@ -23,7 +23,7 @@
             padding 0
     .navigation
       clear both
-      display flex
+      display-flex(flex)
       align-items center
       float none
       border-top 1px solid $default-border
@@ -216,6 +216,10 @@
     margin-top 16px
     > div
       margin 0 0 16px 0
+      &:nth-child(3n + 1)
+      &:nth-child(3n)
+      &:nth-child(even)
+        margin 0 0 16px 0
   .portfolio.list
     width 100%
     .tools
