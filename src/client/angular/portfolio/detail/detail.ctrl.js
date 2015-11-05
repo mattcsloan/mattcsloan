@@ -1,14 +1,13 @@
-angular.module('PortfolioDetailCtrl', []).controller('PortfolioDetailController', function($http, Page, portfolioId) {
+angular.module('PortfolioDetailCtrl', []).controller('PortfolioDetailController', function($http, Page, portfolioKey) {
   var vm = this;
   
-  $http.get('/api/portfolio/' + portfolioId)
+  $http.get('/api/portfolio/' + portfolioKey)
     .success(function (res) {
       vm.portfolioDetail = res;
     });
-  $http.get('/api/portfolio/preview/' + portfolioId)
+  $http.get('/api/portfolio/preview/' + portfolioKey)
     .success(function (res) {
       vm.portfolioPreview = res;
-      // vm.portfolioTools = res.tools;
       Page.setTitle(res.project);
     });
 });
