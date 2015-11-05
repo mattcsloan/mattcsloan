@@ -1,7 +1,8 @@
 module.exports = [
     {
         id: 1,
-        key: 'tweeters-website',
+        urlBase: 'tweeters',
+        urlTitle: 'website',
         project: 'Tweeters Website Design',
         client: 'tweeters',
         employer: 'smk',
@@ -11,7 +12,8 @@ module.exports = [
     },
     {
         id: 3,
-        key: 'ecoplumbers-logo',
+        urlBase: 'ecoplumbers',
+        urlTitle: 'logo',
         project: 'Ecoplumbers Logo',
         client: 'ecoplumbers',
         employer: 'smk',
@@ -21,7 +23,8 @@ module.exports = [
     },
     {
         id: 4,
-        key: 'photographic-creations-website',
+        urlBase: 'photographic-creations',
+        urlTitle: 'website',
         project: 'Photographic Creations Websites',
         client: 'pc',
         employer: 'pc',
@@ -31,7 +34,8 @@ module.exports = [
     },
     {
         id: 5,
-        key: 'shiloh-hall-logo',
+        urlBase: 'shiloh-hall',
+        urlTitle: 'logo',
         project: 'Shiloh Hall Logo Identity',
         client: 'shiloh',
         employer: 'mcs',
@@ -41,7 +45,8 @@ module.exports = [
     },
     {
         id: 6,
-        key: 'shiloh-hall-website',
+        urlBase: 'shiloh-hall',
+        urlTitle: 'website',
         project: 'Shiloh Hall Website Design',
         client: 'shiloh',
         employer: 'mcs',
@@ -51,7 +56,8 @@ module.exports = [
     },
     {
         id: 7,
-        key: 'mbbs-logo',
+        urlBase: 'mbbs',
+        urlTitle: 'logo',
         project: 'Medical Business Billing Systems Logo',
         client: 'mbbs',
         employer: 'mcs',
@@ -61,7 +67,8 @@ module.exports = [
     },
     {
         id: 8,
-        key: 'mbbs-website',
+        urlBase: 'mbbs',
+        urlTitle: 'website',
         project: 'Medical Business Billing Systems Website',
         client: 'mbbs',
         employer: 'mcs',
@@ -71,7 +78,8 @@ module.exports = [
     },
     {
         id: 9,
-        key: 'brighthouse-email',
+        urlBase: 'brighthouse',
+        urlTitle: 'email',
         project: 'Email Newsletter Designs',
         client: 'brighthouse',
         employer: 'knotice',
@@ -81,7 +89,8 @@ module.exports = [
     },
     {
         id: 10,
-        key: 'crocs-microsites',
+        urlBase: 'crocs',
+        urlTitle: 'microsites',
         project: 'Deal of the Day Product Microsites',
         client: 'crocs',
         employer: 'knotice',
@@ -91,7 +100,8 @@ module.exports = [
     },
     {
         id: 12,
-        key: 'mars-landing-page',
+        urlBase: 'mars',
+        urlTitle: 'landing-page',
         project: 'Fortune Magazine QR Code Landing Page',
         client: 'mars',
         employer: 'knotice',
@@ -101,7 +111,8 @@ module.exports = [
     },
     {
         id: 13,
-        key: 'tigi-microsite',
+        urlBase: 'tigi',
+        urlTitle: 'microsite',
         project: 'Catwalk Collection Microsite',
         client: 'catwalk',
         employer: 'knotice',
@@ -111,7 +122,8 @@ module.exports = [
     },
     {
         id: 14,
-        key: 'diebold-microsites',
+        urlBase: 'diebold',        
+        urlTitle: 'microsites',
         project: 'Informational and Campaign Promotion Microsites',
         client: 'diebold',
         employer: 'knotice',
@@ -121,7 +133,8 @@ module.exports = [
     },
     {
         id: 15,
-        key: 'mtd-microsites',
+        urlBase: 'mtd',
+        urlTitle: 'microsites',
         project: 'Lawn Mower Microsites and Parts Listings',
         client: 'mtd',
         employer: 'knotice',
@@ -131,7 +144,8 @@ module.exports = [
     },
     {
         id: 16,
-        key: 'charter-landing-pages',
+        urlBase: 'charter',
+        urlTitle: 'landing-pages',
         project: 'Internet Speed Increase Landing Pages',
         client: 'charter',
         employer: 'knotice',
@@ -141,7 +155,8 @@ module.exports = [
     },
     {
         id: 17,
-        key: 'invacare-microsites',
+        urlBase: 'invacare',
+        urlTitle: 'microsites',
         project: 'Product Information Microsites',
         client: 'invacare',
         employer: 'knotice',
@@ -151,7 +166,8 @@ module.exports = [
     },
     {
         id: 20,
-        key: 'westjet-mobile',
+        urlBase: 'westjet',
+        urlTitle: 'mobile',
         project: 'Corporate Mobile Website',
         client: 'westjet',
         employer: 'knotice',
@@ -161,7 +177,8 @@ module.exports = [
     },
     {
         id: 21,
-        key: 'xfinity-microsites',
+        urlBase: 'xfinity',
+        urlTitle: 'microsites',
         project: 'Video Guide Information Microsites',
         client: 'xfinity',
         employer: 'knotice',
@@ -171,7 +188,8 @@ module.exports = [
     },
     {
         id: 22,
-        key: 'charter-landing-page',
+        urlBase: 'charter',
+        urlTitle: 'landing-page',
         project: 'Internet Speed Comparison Landing Page',
         client: 'charter',
         employer: 'knotice',
@@ -181,7 +199,7 @@ module.exports = [
     },
     // {
     //     id: 23,
-    //     key: 'canon-360-tour',
+    //     urlBase: 'canon-360-tour',
     //     project: '360 Degree Printer Tours',
     //     client: 'Canon',
     //     employer: 'knotice',

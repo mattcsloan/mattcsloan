@@ -17,23 +17,25 @@ module.exports = function(app) {
         res.json(201, portfolioList);
     });
 
-    app.get('/api/portfolio/preview/:key', function(req, res) {
-        var key = req.params.key;
+    app.get('/api/portfolio/preview/:base/:title', function(req, res) {
+        var base = req.params.base;
+        var urlTitle = req.params.title;
         var items = portfolioList;
         for(var i = 0; i < items.length; i++) {
             var item = items[i];
-            if(item.key == key) {
+            if(item.urlBase == base && item.urlTitle == urlTitle) {
                 res.json(201, item);
             }
         }        
     });
 
-    app.get('/api/portfolio/:key', function(req, res) {
-        var key = req.params.key;
+    app.get('/api/portfolio/:base/:title', function(req, res) {
+        var base = req.params.base;
+        var urlTitle = req.params.title;
         var items = portfolioDetail;
         for(var i = 0; i < items.length; i++) {
             var item = items[i];
-            if(item.key == key) {
+            if(item.urlBase == base && item.urlTitle == urlTitle) {
                 res.json(201, item.item);
             }
         }

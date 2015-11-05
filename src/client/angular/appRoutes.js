@@ -46,18 +46,25 @@ angular.module('appRoutes', []).config(['$stateProvider', '$locationProvider', '
             })
 
             .state('portfolio.detail', {
-                url: '/:portfolioKey',
+                url: '/:portfolioBase/:portfolioTitle',
                 views: {
                     portfolio: {
                         templateUrl: '/templates/portfolio/detail/detail.view.html',
                         controller: 'PortfolioDetailController',
                         controllerAs: 'detail',
                         resolve: {
-                            portfolioKey: ['$stateParams', '$state', function($stateParams, $state){
-                                if(!$stateParams.portfolioKey) {
+                            portfolioBase: ['$stateParams', '$state', function($stateParams, $state){
+                                if(!$stateParams.portfolioBase) {
                                     $state.go('portfolio');
                                 }  else {
-                                    return $stateParams.portfolioKey;
+                                    return $stateParams.portfolioBase;
+                                }                               
+                            }],
+                            portfolioTitle: ['$stateParams', '$state', function($stateParams, $state){
+                                if(!$stateParams.portfolioTitle) {
+                                    $state.go('portfolio');
+                                }  else {
+                                    return $stateParams.portfolioTitle;
                                 }                               
                             }]
                         }

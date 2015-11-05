@@ -1,7 +1,8 @@
 module.exports = [
     {
         id: 1,
-        key: 'tweeters-website',
+        urlBase: 'tweeters',
+        urlTitle: 'website',
         item: [
             {
                 heading: 'Tweeters Website Design',
@@ -14,7 +15,8 @@ module.exports = [
     },
     {
         id: 3,
-        key: 'ecoplumbers-logo',
+        urlBase: 'ecoplumbers',
+        urlTitle: 'logo',
         item: [
             {
                 heading: 'Logo and Brand Creation',
@@ -27,7 +29,8 @@ module.exports = [
     },
     {
         id: 4,
-        key: 'photographic-creations-website',
+        urlBase: 'photographic-creations',
+        urlTitle: 'website',
         item: [
             {
                 heading: 'Photographic Creations Website Design and Build',
@@ -47,7 +50,8 @@ module.exports = [
     },
     {
         id: 5,
-        key: 'shiloh-hall-logo',
+        urlBase: 'shiloh-hall',
+        urlTitle: 'logo',
         item: [
             {
                 heading: 'The Shiloh Branding',
@@ -60,7 +64,8 @@ module.exports = [
     },
     {
         id: 6,
-        key: 'shiloh-hall-website',
+        urlBase: 'shiloh-hall',
+        urlTitle: 'website',
         item: [
             {
                 heading: 'The Shiloh Website Design',
@@ -94,7 +99,8 @@ module.exports = [
     },
     {
         id: 7,
-        key: 'mbbs-logo',
+        urlBase: 'mbbs',
+        urlTitle: 'logo',
         item: [
             {
                 heading: 'Brand Concept',
@@ -107,7 +113,8 @@ module.exports = [
     },
     {
         id: 8,
-        key: 'mbbs-website',
+        urlBase: 'mbbs',
+        urlTitle: 'website',
         item: [
             {
                 heading: 'Website Home Page Design',
@@ -134,7 +141,8 @@ module.exports = [
     },
     {
         id: 9,
-        key: 'brighthouse-email',
+        urlBase: 'brighthouse',
+        urlTitle: 'email',
         item: [
             {
                 heading: 'Monthly Movies On Demand Newsletter Design',
@@ -168,7 +176,8 @@ module.exports = [
     },
     {
         id: 10,
-        key: 'crocs-microsites',
+        urlBase: 'crocs',
+        urlTitle: 'microsites',
         item: [
             {
                 heading: 'Crocs Image Gallery Build',
@@ -181,7 +190,8 @@ module.exports = [
     },
     {
         id: 12,
-        key: 'mars-landing-page',
+        urlBase: 'mars',
+        urlTitle: 'landing-page',
         item: [
             {
                 heading: 'Landing Page and Signup Form',
@@ -194,7 +204,8 @@ module.exports = [
     },
     {
         id: 13,
-        key: 'tigi-microsite',
+        urlBase: 'tigi',
+        urlTitle: 'microsite',
         item: [
             {
                 heading: 'Catwalk Product Collection Microsite Design',
@@ -214,7 +225,8 @@ module.exports = [
     },
     {
         id: 14,
-        key: 'diebold-microsites',        
+        urlBase: 'diebold',        
+        urlTitle: 'microsites',
         item: [
             {
                 heading: 'Accessibility Standards Home Page Design and Build',
@@ -234,7 +246,8 @@ module.exports = [
     },
     {
         id: 15,
-        key: 'mtd-microsites',
+        urlBase: 'mtd',
+        urlTitle: 'microsites',
         item: [
             {
                 heading: 'Cub Cadet Lawn Mower Microsites',
@@ -261,7 +274,8 @@ module.exports = [
     },
     {
         id: 16,
-        key: 'charter-landing-pages',
+        urlBase: 'charter',
+        urlTitle: 'landing-pages',
         item: [
             {
                 heading: 'Landing Page Design and Build',
@@ -281,7 +295,8 @@ module.exports = [
     },
     {
         id: 17,
-        key: 'invacare-microsites',
+        urlBase: 'invacare',
+        urlTitle: 'microsites',
         item: [
             {
                 heading: 'Invacare DS Bed Mobile Microsite',
@@ -301,6 +316,8 @@ module.exports = [
     },
     // {
     //     id: 19,
+    //     urlBase: 'bayer',
+    //     urlTitle: 'mobile',
     //     item: [
     //         {
     //             heading: 'Home Page Mobile Design',
@@ -320,7 +337,8 @@ module.exports = [
     // },
     {
         id: 20,
-        key: 'westjet-mobile',
+        urlBase: 'westjet',
+        urlTitle: 'mobile',
         item: [
             {
                 heading: 'WestJet Mobile Design',
@@ -361,7 +379,8 @@ module.exports = [
     },
     {
         id: 21,
-        key: 'xfinity-microsites',
+        urlBase: 'xfinity',
+        urlTitle: 'microsites',
         item: [
             {
                 heading: 'Website Home Page',
@@ -388,7 +407,8 @@ module.exports = [
     },
     {
         id: 22,
-        key: 'charter-landing-page',
+        urlBase: 'charter',
+        urlTitle: 'landing-page',
         item: [
             {
                 heading: 'Compare Charter Internet Speeds',
