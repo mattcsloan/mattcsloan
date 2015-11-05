@@ -1,6 +1,7 @@
 module.exports = [
     {
         id: 1,
+        key: 'tweeters-website',
         item: [
             {
                 heading: 'Tweeters Website Design',
@@ -13,6 +14,7 @@ module.exports = [
     },
     {
         id: 3,
+        key: 'ecoplumbers-logo',
         item: [
             {
                 heading: 'Logo and Brand Creation',
@@ -25,6 +27,7 @@ module.exports = [
     },
     {
         id: 4,
+        key: 'photographic-creations-website',
         item: [
             {
                 heading: 'Photographic Creations Website Design and Build',
@@ -44,6 +47,7 @@ module.exports = [
     },
     {
         id: 5,
+        key: 'shiloh-hall-logo',
         item: [
             {
                 heading: 'The Shiloh Branding',
@@ -56,6 +60,7 @@ module.exports = [
     },
     {
         id: 6,
+        key: 'shiloh-hall-website',
         item: [
             {
                 heading: 'The Shiloh Website Design',
@@ -89,6 +94,7 @@ module.exports = [
     },
     {
         id: 7,
+        key: 'mbbs-logo',
         item: [
             {
                 heading: 'Brand Concept',
@@ -101,6 +107,7 @@ module.exports = [
     },
     {
         id: 8,
+        key: 'mbbs-website',
         item: [
             {
                 heading: 'Website Home Page Design',
@@ -127,6 +134,7 @@ module.exports = [
     },
     {
         id: 9,
+        key: 'brighthouse-email',
         item: [
             {
                 heading: 'Monthly Movies On Demand Newsletter Design',
@@ -160,6 +168,7 @@ module.exports = [
     },
     {
         id: 10,
+        key: 'crocs-microsites',
         item: [
             {
                 heading: 'Crocs Image Gallery Build',
@@ -172,6 +181,7 @@ module.exports = [
     },
     {
         id: 12,
+        key: 'mars-landing-page',
         item: [
             {
                 heading: 'Landing Page and Signup Form',
@@ -184,6 +194,7 @@ module.exports = [
     },
     {
         id: 13,
+        key: 'tigi-microsite',
         item: [
             {
                 heading: 'Catwalk Product Collection Microsite Design',
@@ -203,6 +214,7 @@ module.exports = [
     },
     {
         id: 14,
+        key: 'diebold-microsites',        
         item: [
             {
                 heading: 'Accessibility Standards Home Page Design and Build',
@@ -222,6 +234,7 @@ module.exports = [
     },
     {
         id: 15,
+        key: 'mtd-microsites',
         item: [
             {
                 heading: 'Cub Cadet Lawn Mower Microsites',
@@ -248,6 +261,7 @@ module.exports = [
     },
     {
         id: 16,
+        key: 'charter-landing-pages',
         item: [
             {
                 heading: 'Landing Page Design and Build',
@@ -267,6 +281,7 @@ module.exports = [
     },
     {
         id: 17,
+        key: 'invacare-microsites',
         item: [
             {
                 heading: 'Invacare DS Bed Mobile Microsite',
@@ -284,27 +299,28 @@ module.exports = [
             }
         ]
     },
-    {
-        id: 19,
-        item: [
-            {
-                heading: 'Home Page Mobile Design',
-                copy: "A proposed mobile design for Bayer Pharmaceuticals. This microsite is intended for use by pharmacists. Most pharmacists do not have full access to the internet while at work, so a mobile microsite gives pharmacists the opportunity to learn more about these bayer products from their mobile device without having to use their workplace's restricted internet.",
-                image: 'bayer_01',
-                link: null,
-                zoom: false
-            },
-            {
-                heading: 'Interior Page Design Detail',
-                copy: 'A view of an interior product page. The microsite contains 3 different birth control products and each product tells the pharmacist about prescribing information, as well as important safety information for the patient.',
-                image: 'bayer_02',
-                link: null,
-                zoom: false
-            }
-        ]
-    },
+    // {
+    //     id: 19,
+    //     item: [
+    //         {
+    //             heading: 'Home Page Mobile Design',
+    //             copy: "A proposed mobile design for Bayer Pharmaceuticals. This microsite is intended for use by pharmacists. Most pharmacists do not have full access to the internet while at work, so a mobile microsite gives pharmacists the opportunity to learn more about these bayer products from their mobile device without having to use their workplace's restricted internet.",
+    //             image: 'bayer_01',
+    //             link: null,
+    //             zoom: false
+    //         },
+    //         {
+    //             heading: 'Interior Page Design Detail',
+    //             copy: 'A view of an interior product page. The microsite contains 3 different birth control products and each product tells the pharmacist about prescribing information, as well as important safety information for the patient.',
+    //             image: 'bayer_02',
+    //             link: null,
+    //             zoom: false
+    //         }
+    //     ]
+    // },
     {
         id: 20,
+        key: 'westjet-mobile',
         item: [
             {
                 heading: 'WestJet Mobile Design',
@@ -345,6 +361,7 @@ module.exports = [
     },
     {
         id: 21,
+        key: 'xfinity-microsites',
         item: [
             {
                 heading: 'Website Home Page',
@@ -371,6 +388,7 @@ module.exports = [
     },
     {
         id: 22,
+        key: 'charter-landing-page',
         item: [
             {
                 heading: 'Compare Charter Internet Speeds',

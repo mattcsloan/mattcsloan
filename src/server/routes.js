@@ -17,23 +17,23 @@ module.exports = function(app) {
         res.json(201, portfolioList);
     });
 
-    app.get('/api/portfolio/preview/:id', function(req, res) {
-        var id = req.params.id;
+    app.get('/api/portfolio/preview/:key', function(req, res) {
+        var key = req.params.key;
         var items = portfolioList;
         for(var i = 0; i < items.length; i++) {
             var item = items[i];
-            if(item.id == id) {
+            if(item.key == key) {
                 res.json(201, item);
             }
         }        
     });
 
-    app.get('/api/portfolio/:id', function(req, res) {
-        var id = req.params.id;
+    app.get('/api/portfolio/:key', function(req, res) {
+        var key = req.params.key;
         var items = portfolioDetail;
         for(var i = 0; i < items.length; i++) {
             var item = items[i];
-            if(item.id == id) {
+            if(item.key == key) {
                 res.json(201, item.item);
             }
         }
