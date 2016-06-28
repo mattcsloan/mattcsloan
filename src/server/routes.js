@@ -46,6 +46,56 @@ module.exports = function(app) {
     });
 
 
+    // redirects from old site =================================================
+
+    app.get('/Default.aspx', function(req, res) {
+        res.redirect(301, '/');
+    });
+
+    app.get('/portfolio.aspx', function(req, res) {
+        res.redirect(301, '/portfolio');
+    });
+
+    app.get('/experience.aspx', function(req, res) {
+        res.redirect(301, '/experience');
+    });
+
+    app.get('/contact.aspx', function(req, res) {
+        res.redirect(301, '/contact');
+    });
+
+    app.get('/portfolio/Default.aspx', function(req, res) {
+        var pageId = req.query.id;
+        if(pageId) {
+            switch(pageId) {
+                case "1": pageUrl = '/tweeters/website'; break;
+                case "3": pageUrl = '/ecoplumbers/logo'; break;
+                case "4": pageUrl = '/photographic-creations/website'; break;
+                case "5": pageUrl = '/shiloh-hall/logo'; break;
+                case "6": pageUrl = '/shiloh-hall/website'; break;
+                case "7": pageUrl = '/mbbs/logo'; break;
+                case "8": pageUrl = '/mbbs/website'; break;
+                case "9": pageUrl = '/brighthouse/email'; break;
+                case "10": pageUrl = '/crocs/microsites'; break;
+                case "12": pageUrl = '/mars/landing-page'; break;
+                case "13": pageUrl = '/tigi/microsite'; break;
+                case "14": pageUrl = '/diebold/microsites'; break;
+                case "15": pageUrl = '/mtd/microsites'; break;
+                case "16": pageUrl = '/charter/landing-pages'; break;
+                case "17": pageUrl = '/invacare/microsites'; break;
+                case "19": pageUrl = ''; break;
+                case "20": pageUrl = '/westjet/mobile'; break;
+                case "21": pageUrl = '/xfinity/microsites'; break;
+                case "22": pageUrl = '/charter/landing-page'; break;
+                default: pageUrl = '';
+            };
+
+            res.redirect(301, '/portfolio' + pageUrl);
+        } else {
+            res.redirect(301, '/portfolio');
+        }
+    });
+
     // frontend routes =========================================================
     
     // route to handle all angular requests
