@@ -12,7 +12,7 @@ module.exports = {
     },
     {
       key: 'contact',
-      label: 'Contact',
+      label: 'Contact.',
       url: 'contact'
     }  
   ]
